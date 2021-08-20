@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Git Cheat Sheet &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="file4.html" />
+    <link rel="prev" title="ML algorithms" href="file3.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EStA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">ML algorithms</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git Cheat Sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-code">Getting Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dealing-with-the-working-tree">Dealing with the Working Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branches">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tags">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-history-and-logs">The History, and Logs</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Git Cheat Sheet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/file3a.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="git-cheat-sheet">
+<h1>Git Cheat Sheet<a class="headerlink" href="#git-cheat-sheet" title="Permalink to this headline">¶</a></h1>
+<p><em>taken from https://gist.github.com/fogleman/</em></p>
+<p>This attempts to be a useful “cheat sheet” for git.  I’m just writing git recipes down here as I find and use them.</p>
+<section id="getting-code">
+<h2>Getting Code<a class="headerlink" href="#getting-code" title="Permalink to this headline">¶</a></h2>
+<p><strong>Clone a repository (GitHub)</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:username/repository.git</span>
+<span class="pre">`</span></code></p>
+<p><strong>Checkout a branch into your working tree</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">branchname</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="dealing-with-the-working-tree">
+<h2>Dealing with the Working Tree<a class="headerlink" href="#dealing-with-the-working-tree" title="Permalink to this headline">¶</a></h2>
+<p><strong>Delete untracked files in your working tree</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">#</span> <span class="pre">Remove</span> <span class="pre">untracked</span> <span class="pre">files</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-d</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Also</span> <span class="pre">directories</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-x</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Also</span> <span class="pre">ignored</span> <span class="pre">files</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-X</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Just</span> <span class="pre">ignored</span> <span class="pre">files</span>
+<span class="pre">`</span></code></p>
+<p><strong>Restore to the HEAD of your current branch</strong>
+This is a good way to abort a merge in progress
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--hard</span> <span class="pre">HEAD</span>
+<span class="pre">`</span></code>
+<strong>Restore a file from an old revision</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">[commit_id]</span> <span class="pre">--</span> <span class="pre">path/to/oldfile</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="branches">
+<h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
+<p><strong>Delete a local branch</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">branchname</span>
+<span class="pre">`</span></code></p>
+<p><strong>Push a new branch for the first time</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">push</span> <span class="pre">-u</span> <span class="pre">origin</span> <span class="pre">branchname</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="tags">
+<h2>Tags<a class="headerlink" href="#tags" title="Permalink to this headline">¶</a></h2>
+<p><strong>Create an annotated tag</strong></p>
+<p>Annotated tags are more rich than regular tags, and include date/author information.
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">[tagname]</span> <span class="pre">-m</span> <span class="pre">&quot;Tag</span> <span class="pre">Message...&quot;</span>
+<span class="pre">`</span></code>
+<strong>Checkout a tag</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">[tagname]</span>
+<span class="pre">`</span></code></p>
+</section>
+<section id="the-history-and-logs">
+<h2>The History, and Logs<a class="headerlink" href="#the-history-and-logs" title="Permalink to this headline">¶</a></h2>
+<p><strong>View the commit history, showing the status of files that changed</strong>
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">log</span> <span class="pre">--stat</span>
+<span class="pre">`</span></code></p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="file4.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="file3.html" class="btn btn-neutral float-left" title="ML algorithms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
