@@ -1,9 +1,16 @@
+List of EStA packages information
+=================================
+
+General package
+***************
 .. note:: **General package**:
     This package does general work related to files processing, manipulation, and many other
     things to speed up the workflow.
 
 .. include:: esta.general.rst
 
+qeBag package
+***************
 .. note:: **QE package**:
     This package does processes the Quantum-Espresso files from different calculations, such as scf, relax, 
     vc-relax, or other preprocessing outputs.
@@ -12,6 +19,8 @@
 
 .. include:: esta.qeBag.rst
 
+vaspBag package
+***************
 .. note:: **VASP package**:
     This package does processing of the VASP sofware output files
 
