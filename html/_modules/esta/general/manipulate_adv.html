@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -176,7 +184,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 
-<div class="viewcode-block" id="AtomicStructure"><a class="viewcode-back" href="../../../esta.general.html#esta.general.manipulate_adv.AtomicStructure">[docs]</a><span class="k">class</span> <span class="nc">AtomicStructure</span><span class="p">:</span>
+<div class="viewcode-block" id="AtomicStructure"><a class="viewcode-back" href="../../../file4.html#esta.general.manipulate_adv.AtomicStructure">[docs]</a><span class="k">class</span> <span class="nc">AtomicStructure</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    class to mainipulateatoms present in xyz file or poscar type files</span>
 <span class="sd">    </span>
@@ -210,7 +218,7 @@
         <span class="c1">#print(&#39;dimension of atomic_labels: {}&#39;.format(self.atomic_labels))</span>
         <span class="c1">#print(&#39;shape of atomic_labels: {}&#39;.format( atomic_labels ) )</span>
 
-<div class="viewcode-block" id="AtomicStructure.delete_atoms"><a class="viewcode-back" href="../../../esta.general.html#esta.general.manipulate_adv.AtomicStructure.delete_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">delete_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delete_list</span><span class="p">):</span>
+<div class="viewcode-block" id="AtomicStructure.delete_atoms"><a class="viewcode-back" href="../../../file4.html#esta.general.manipulate_adv.AtomicStructure.delete_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">delete_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delete_list</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        delete atoms from atomic positions array</span>
 
@@ -364,7 +372,7 @@
 
 
 <span class="c1">#     def invert_atom(self, target_array, reference_array): # atomic positions and atomic labels already in __init__</span>
-<div class="viewcode-block" id="AtomicStructure.invert_atoms"><a class="viewcode-back" href="../../../esta.general.html#esta.general.manipulate_adv.AtomicStructure.invert_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">invert_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target_index</span><span class="p">,</span> <span class="n">reference_index</span><span class="p">,</span> <span class="n">misc</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span> <span class="c1"># atomic positions and atomic labels already in __init__</span>
+<div class="viewcode-block" id="AtomicStructure.invert_atoms"><a class="viewcode-back" href="../../../file4.html#esta.general.manipulate_adv.AtomicStructure.invert_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">invert_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target_index</span><span class="p">,</span> <span class="n">reference_index</span><span class="p">,</span> <span class="n">misc</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span> <span class="c1"># atomic positions and atomic labels already in __init__</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        invert atom from atomic positions (target arraay) array or from set of atomic positions </span>
 <span class="sd">        in xyz PAth file</span>
@@ -504,7 +512,7 @@
             
         
 
-<div class="viewcode-block" id="AtomicStructure.freeze_atoms"><a class="viewcode-back" href="../../../esta.general.html#esta.general.manipulate_adv.AtomicStructure.freeze_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">freeze_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frozen_atm_indx</span><span class="p">):</span>
+<div class="viewcode-block" id="AtomicStructure.freeze_atoms"><a class="viewcode-back" href="../../../file4.html#esta.general.manipulate_adv.AtomicStructure.freeze_atoms">[docs]</a>    <span class="k">def</span> <span class="nf">freeze_atoms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frozen_atm_indx</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        freeze atoms from the xyz file</span>
 
@@ -585,7 +593,7 @@
         <span class="k">return</span> <span class="p">(</span><span class="n">pos_frozen</span><span class="p">,</span> <span class="n">symb_frozen</span><span class="p">,</span> <span class="n">frozen_atm_indx</span><span class="p">),</span> <span class="p">(</span><span class="n">pos_not_frozen</span><span class="p">,</span> <span class="n">symb_not_frozen</span><span class="p">,</span> <span class="n">not_frozen_atm_indx</span><span class="p">)</span></div>
     
                     
-<div class="viewcode-block" id="AtomicStructure.get_atm_indices_constraint"><a class="viewcode-back" href="../../../esta.general.html#esta.general.manipulate_adv.AtomicStructure.get_atm_indices_constraint">[docs]</a>    <span class="k">def</span> <span class="nf">get_atm_indices_constraint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frozen_atm_indices</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">not_frozen_atm_indices</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span> <span class="c1">#, natoms):</span>
+<div class="viewcode-block" id="AtomicStructure.get_atm_indices_constraint"><a class="viewcode-back" href="../../../file4.html#esta.general.manipulate_adv.AtomicStructure.get_atm_indices_constraint">[docs]</a>    <span class="k">def</span> <span class="nf">get_atm_indices_constraint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frozen_atm_indices</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">not_frozen_atm_indices</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span> <span class="c1">#, natoms):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        </span>
 <span class="sd">        input: </span>

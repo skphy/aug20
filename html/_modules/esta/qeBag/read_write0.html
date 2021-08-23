@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -181,7 +189,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<div class="viewcode-block" id="RWpwo"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo">[docs]</a><span class="k">class</span> <span class="nc">RWpwo</span><span class="p">:</span>
+<div class="viewcode-block" id="RWpwo"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo">[docs]</a><span class="k">class</span> <span class="nc">RWpwo</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Class to read and write data file for the atomic structures</span>
 
@@ -214,12 +222,12 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;callind static method vector_prod&#39;</span><span class="p">)</span>
         <span class="k">return</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
     
-<div class="viewcode-block" id="RWpwo.vector_prod"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.vector_prod">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="RWpwo.vector_prod"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.vector_prod">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">vector_prod</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
         <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;calling class method vector_ptod&#39;</span><span class="p">)</span>
         <span class="k">return</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">))</span></div>
     
-<div class="viewcode-block" id="RWpwo.get_natoms"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_natoms">[docs]</a>    <span class="k">def</span> <span class="nf">get_natoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_natoms"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_natoms">[docs]</a>    <span class="k">def</span> <span class="nf">get_natoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
@@ -230,7 +238,7 @@
             <span class="k">return</span> <span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="s2">&quot;None&quot;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="RWpwo.get_atm_positions"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_atm_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atm_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_atm_positions"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_atm_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atm_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        find atom positions with labels</span>
 <span class="sd">        ...</span>
@@ -296,7 +304,7 @@
                 <span class="k">return</span> <span class="kc">None</span>  </div>
 
 
-<div class="viewcode-block" id="RWpwo.get_cell_parameters"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_cell_parameters">[docs]</a>    <span class="k">def</span> <span class="nf">get_cell_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_cell_parameters"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_cell_parameters">[docs]</a>    <span class="k">def</span> <span class="nf">get_cell_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 
 <span class="sd">        return:</span>
@@ -358,7 +366,7 @@
 
             
             
-<div class="viewcode-block" id="RWpwo.get_energies_and_kpt"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_energies_and_kpt">[docs]</a>    <span class="k">def</span> <span class="nf">get_energies_and_kpt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_energies_and_kpt"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_energies_and_kpt">[docs]</a>    <span class="k">def</span> <span class="nf">get_energies_and_kpt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get the band energies at k point by reading the scf calculation </span>
 <span class="sd">        out file</span>
@@ -370,7 +378,7 @@
             
             
     <span class="c1"># def get_xyz_file(outfile):</span>
-<div class="viewcode-block" id="RWpwo.get_xyz_file"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+<div class="viewcode-block" id="RWpwo.get_xyz_file"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get xyz file by reading the atomic positions and atomic labels: use method</span>
 <span class="sd">            - get_atm_positions(infile)</span>
@@ -406,7 +414,7 @@
         <span class="c1">#print(&quot;              as xyz file&quot;)</span>
 
 
-<div class="viewcode-block" id="RWpwo.get_xyz_grouped_file"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_xyz_grouped_file">[docs]</a>    <span class="k">def</span>  <span class="nf">get_xyz_grouped_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+<div class="viewcode-block" id="RWpwo.get_xyz_grouped_file"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_xyz_grouped_file">[docs]</a>    <span class="k">def</span>  <span class="nf">get_xyz_grouped_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get xyz file by reading the atomic positions and atomic labels: use method</span>
 <span class="sd">            - get_atm_positions(infile)</span>
@@ -446,7 +454,7 @@
         <span class="c1">#return(new_position, atom_label)</span>
 
 
-<div class="viewcode-block" id="RWpwo.get_poscar"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_poscar"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        write cell_parameters and atomic postions, atom labels etc in </span>
 <span class="sd">        poscar file</span>
@@ -499,7 +507,7 @@
                 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span> <span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="RWpwo.get_element_label"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_element_label">[docs]</a>    <span class="k">def</span> <span class="nf">get_element_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_atomic_number</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_element_label"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_element_label">[docs]</a>    <span class="k">def</span> <span class="nf">get_element_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_atomic_number</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        using mendeleev for it : big database of elemental properties</span>
 
@@ -523,7 +531,7 @@
             <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">label</span></div>
 
-<div class="viewcode-block" id="RWpwo.get_unique_list"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
             <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">            get unique elements of list</span>
 
@@ -537,7 +545,7 @@
                     <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">ulist</span></div>
 
-<div class="viewcode-block" id="RWpwo.get_grouped_list"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get same string elements of list grouped together</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -568,7 +576,7 @@
 
         <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="RWpwo.get_neach_type"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwo.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwo.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwo.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get number of list entries of each type</span>
 
@@ -647,7 +655,7 @@
 <span class="c1"># In[4]:</span>
 
 
-<div class="viewcode-block" id="RWpwi"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwi">[docs]</a><span class="k">class</span> <span class="nc">RWpwi</span><span class="p">:</span>
+<div class="viewcode-block" id="RWpwi"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwi">[docs]</a><span class="k">class</span> <span class="nc">RWpwi</span><span class="p">:</span>
     
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    class to read the pw input file and create poscar file</span>
@@ -662,7 +670,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">infile</span> <span class="o">=</span> <span class="n">infile</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span> <span class="o">=</span> <span class="n">outfile</span>    
         
-<div class="viewcode-block" id="RWpwi.get_unique_list"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwi.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwi.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwi.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
 
             <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">            get unique elements of list</span>
@@ -680,7 +688,7 @@
                     <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">ulist</span></div>
 
-<div class="viewcode-block" id="RWpwi.get_grouped_list"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwi.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">llist</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwi.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwi.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">llist</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get same string elements of list grouped together</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -712,7 +720,7 @@
 
         <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="RWpwi.get_neach_type"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwi.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwi.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwi.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get number of list entries of each type</span>
 
@@ -735,7 +743,7 @@
         <span class="c1">#print (neach)</span>
         <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="RWpwi.get_poscar"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.read_write0.RWpwi.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="RWpwi.get_poscar"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write0.RWpwi.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        write cell_parameters and atomic postions, atom labels etc in </span>
 <span class="sd">        poscar file</span>

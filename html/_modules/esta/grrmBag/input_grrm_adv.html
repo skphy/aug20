@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -167,7 +175,7 @@
 <span class="c1"># In[8]:</span>
 
 
-<div class="viewcode-block" id="GenerateCom"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom">[docs]</a><span class="k">class</span> <span class="nc">GenerateCom</span><span class="p">():</span>
+<div class="viewcode-block" id="GenerateCom"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom">[docs]</a><span class="k">class</span> <span class="nc">GenerateCom</span><span class="p">():</span>
     
     <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
@@ -222,7 +230,7 @@
         
 
 
-<div class="viewcode-block" id="GenerateCom.read_xyz"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="GenerateCom.read_xyz"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        </span>
 <span class="sd">        input: </span>
@@ -269,7 +277,7 @@
                 <span class="k">return</span> <span class="kc">None</span></div>
 
             
-<div class="viewcode-block" id="GenerateCom.read_xyz2"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.read_xyz2">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyz2file</span><span class="p">):</span>
+<div class="viewcode-block" id="GenerateCom.read_xyz2"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.read_xyz2">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyz2file</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        </span>
 <span class="sd">        input: </span>
@@ -320,7 +328,7 @@
             
             
 <span class="c1">#     def flags_grrm(self, *arg, **kwarg):</span>
-<div class="viewcode-block" id="GenerateCom.flags_grrm"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.flags_grrm">[docs]</a>    <span class="k">def</span> <span class="nf">flags_grrm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="GenerateCom.flags_grrm"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.flags_grrm">[docs]</a>    <span class="k">def</span> <span class="nf">flags_grrm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        other options in GRRM code for calculation types</span>
@@ -376,7 +384,7 @@
         
         
         
-<div class="viewcode-block" id="GenerateCom.write_com"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_com">[docs]</a>    <span class="k">def</span> <span class="nf">write_com</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interface</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="GenerateCom.write_com"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_com">[docs]</a>    <span class="k">def</span> <span class="nf">write_com</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interface</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        input:</span>
 <span class="sd">        ------</span>
@@ -427,7 +435,7 @@
         
 <span class="c1">#.....hrere to change ....&gt;&gt;&gt;  SK=========================================================</span>
     <span class="c1">#def write_com_2xyz(self, **kwargs):</span>
-<div class="viewcode-block" id="GenerateCom.write_com_2xyz"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_com_2xyz">[docs]</a>    <span class="k">def</span> <span class="nf">write_com_2xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyz2file</span><span class="p">,</span> <span class="n">interface</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>  <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>        
+<div class="viewcode-block" id="GenerateCom.write_com_2xyz"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_com_2xyz">[docs]</a>    <span class="k">def</span> <span class="nf">write_com_2xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyz2file</span><span class="p">,</span> <span class="n">interface</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>  <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>        
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        input:</span>
 <span class="sd">        ------</span>
@@ -498,7 +506,7 @@
 
     
     
-<div class="viewcode-block" id="GenerateCom.write_inp"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_inp">[docs]</a>    <span class="k">def</span> <span class="nf">write_inp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile</span><span class="p">,</span> <span class="n">charge</span><span class="p">,</span> <span class="n">multiplicity</span><span class="p">):</span> <span class="c1">#, interface = None, **kwargs):</span>
+<div class="viewcode-block" id="GenerateCom.write_inp"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.input_grrm_adv.GenerateCom.write_inp">[docs]</a>    <span class="k">def</span> <span class="nf">write_inp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile</span><span class="p">,</span> <span class="n">charge</span><span class="p">,</span> <span class="n">multiplicity</span><span class="p">):</span> <span class="c1">#, interface = None, **kwargs):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        </span>
 <span class="sd">        generate input file for ORCA like below:</span>

@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -167,7 +175,7 @@
 <span class="c1"># In[ ]:</span>
 
 
-<div class="viewcode-block" id="neb"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb">[docs]</a><span class="k">class</span> <span class="nc">neb</span><span class="p">():</span>
+<div class="viewcode-block" id="neb"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb">[docs]</a><span class="k">class</span> <span class="nc">neb</span><span class="p">():</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    python class</span>
 <span class="sd">    </span>
@@ -220,7 +228,7 @@
         <span class="c1">#print(&#39;xyzfiles names: {}&#39;.format(self.xyzfiles))</span>
 
 <span class="c1">#     def read_xyz(self):</span>
-<div class="viewcode-block" id="neb.read_xyz"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.read_xyz"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        input: </span>
 <span class="sd">        ------</span>
@@ -288,7 +296,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">None</span></div>
         
-<div class="viewcode-block" id="neb.read_axsf"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.read_axsf">[docs]</a>    <span class="k">def</span> <span class="nf">read_axsf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axsf_file</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.read_axsf"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.read_axsf">[docs]</a>    <span class="k">def</span> <span class="nf">read_axsf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axsf_file</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        </span>
 <span class="sd">        input: </span>
@@ -376,7 +384,7 @@
                 <span class="k">return</span> <span class="kc">None</span></div>
                 <span class="c1"># better raiseError here .. TODO ..</span>
 
-<div class="viewcode-block" id="neb.read_path"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.read_path">[docs]</a>    <span class="k">def</span> <span class="nf">read_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_file</span><span class="p">,</span> <span class="n">qe_input</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.read_path"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.read_path">[docs]</a>    <span class="k">def</span> <span class="nf">read_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_file</span><span class="p">,</span> <span class="n">qe_input</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        </span>
 <span class="sd">        input: </span>
@@ -529,7 +537,7 @@
 
 
     <span class="c1">#def write_position_card(self):        </span>
-<div class="viewcode-block" id="neb.write_position_card"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.write_position_card">[docs]</a>    <span class="k">def</span> <span class="nf">write_position_card</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.write_position_card"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.write_position_card">[docs]</a>    <span class="k">def</span> <span class="nf">write_position_card</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        input:</span>
 <span class="sd">        ------</span>
@@ -617,7 +625,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing supercard for neb input file for QE code !!!&#39;</span><span class="p">)</span></div>
 
         
-<div class="viewcode-block" id="neb.to_xyz_files"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.to_xyz_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.to_xyz_files"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.to_xyz_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        input:</span>
 <span class="sd">        ------</span>
@@ -687,7 +695,7 @@
 
             
             
-<div class="viewcode-block" id="neb.to_xyz_plus_delta_files"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.neb_qe1.neb.to_xyz_plus_delta_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_plus_delta_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">no_strs</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="neb.to_xyz_plus_delta_files"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe1.neb.to_xyz_plus_delta_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_plus_delta_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">no_strs</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        input:</span>
 <span class="sd">        ------</span>

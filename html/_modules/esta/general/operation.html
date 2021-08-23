@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -167,7 +175,7 @@
 <span class="c1"># In[2]:</span>
 
 
-<div class="viewcode-block" id="transform"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform">[docs]</a><span class="k">class</span> <span class="nc">transform</span><span class="p">:</span>
+<div class="viewcode-block" id="transform"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform">[docs]</a><span class="k">class</span> <span class="nc">transform</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;transfor class to</span>
 <span class="sd">       * create supercell from crystal lattice object</span>
 <span class="sd">       * rotation/translation etc...todo</span>
@@ -193,7 +201,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_of_atoms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cryst_obj</span><span class="o">.</span><span class="n">get_all_atoms_labels</span><span class="p">()</span>
     
     
-<div class="viewcode-block" id="transform.get_supercell"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_supercell">[docs]</a>    <span class="k">def</span> <span class="nf">get_supercell</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scale</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_supercell"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_supercell">[docs]</a>    <span class="k">def</span> <span class="nf">get_supercell</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scale</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        - create supercell by shifting ALL atoms in space with scaling </span>
 <span class="sd">        [scale1,scale2,scale3]</span>
@@ -272,7 +280,7 @@
         <span class="k">return</span> <span class="n">new_spositions</span><span class="p">,</span> <span class="n">scell</span><span class="p">,</span> <span class="n">satom_label</span></div>
     
     
-<div class="viewcode-block" id="transform.get_unique_list"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
             <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">            get unique elements of list</span>
 
@@ -289,7 +297,7 @@
                     <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">ulist</span></div>
 
-<div class="viewcode-block" id="transform.get_grouped_list"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get same string elements of list grouped together</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -320,7 +328,7 @@
 
         <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="transform.get_neach_type"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get number of list entries of each type</span>
 
@@ -348,7 +356,7 @@
         <span class="c1">#print (neach)</span>
         <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div>
     
-<div class="viewcode-block" id="transform.get_grouped_xyz"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_grouped_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_grouped_xyz"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_grouped_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        xyz file with grouped atoms of same type</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -374,7 +382,7 @@
                 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">satom_label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_spositions</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="transform.get_sposcar"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.get_sposcar">[docs]</a>    <span class="k">def</span> <span class="nf">get_sposcar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="transform.get_sposcar"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.get_sposcar">[docs]</a>    <span class="k">def</span> <span class="nf">get_sposcar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get poscar file with scaled dimensions: supercell of POSCAR file</span>
 <span class="sd">        </span>
@@ -411,7 +419,7 @@
                 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_spositions</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
         
         
-<div class="viewcode-block" id="transform.rot_trans"><a class="viewcode-back" href="../../../esta.general.html#esta.general.operation.transform.rot_trans">[docs]</a>    <span class="k">def</span> <span class="nf">rot_trans</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp_mat</span><span class="p">,</span> <span class="n">lcell</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">lposition</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">translation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rotation_matrix</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>        
+<div class="viewcode-block" id="transform.rot_trans"><a class="viewcode-back" href="../../../file4.html#esta.general.operation.transform.rot_trans">[docs]</a>    <span class="k">def</span> <span class="nf">rot_trans</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp_mat</span><span class="p">,</span> <span class="n">lcell</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">lposition</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">translation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rotation_matrix</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>        
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        given input matrix (may be cell matrix or position matrix in c order) </span>
 <span class="sd">        and rotation matrix (optional; default is unit matrix), output respective new matrix</span>

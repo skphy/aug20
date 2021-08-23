@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -197,7 +205,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">esta.qeBag.parse_pseudo</span> <span class="k">as</span> <span class="nn">parse_pseudo</span>
 
-<div class="viewcode-block" id="min_scalarlist"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.min_scalarlist">[docs]</a><span class="k">def</span> <span class="nf">min_scalarlist</span><span class="p">(</span><span class="n">sequence_list</span><span class="p">):</span>
+<div class="viewcode-block" id="min_scalarlist"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.min_scalarlist">[docs]</a><span class="k">def</span> <span class="nf">min_scalarlist</span><span class="p">(</span><span class="n">sequence_list</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;return the minimum element from scalar elements of a list</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">lowest</span> <span class="o">=</span> <span class="n">sequence_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
@@ -206,7 +214,7 @@
             <span class="n">lowest</span> <span class="o">=</span> <span class="n">i</span>
     <span class="k">return</span> <span class="n">lowest</span></div>
 
-<div class="viewcode-block" id="max_scalarlist"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.max_scalarlist">[docs]</a><span class="k">def</span> <span class="nf">max_scalarlist</span><span class="p">(</span><span class="n">sequence_list</span><span class="p">):</span>
+<div class="viewcode-block" id="max_scalarlist"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.max_scalarlist">[docs]</a><span class="k">def</span> <span class="nf">max_scalarlist</span><span class="p">(</span><span class="n">sequence_list</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;return the max element from scalar elements of a list</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">highest</span> <span class="o">=</span> <span class="n">sequence_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
@@ -216,7 +224,7 @@
     <span class="k">return</span> <span class="n">highest</span></div>
 
 
-<div class="viewcode-block" id="get_N1_N2_N3_in_MP_grid"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.get_N1_N2_N3_in_MP_grid">[docs]</a><span class="k">def</span> <span class="nf">get_N1_N2_N3_in_MP_grid</span><span class="p">(</span><span class="n">posfile</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">location</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">l_metal_insulator</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="get_N1_N2_N3_in_MP_grid"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.get_N1_N2_N3_in_MP_grid">[docs]</a><span class="k">def</span> <span class="nf">get_N1_N2_N3_in_MP_grid</span><span class="p">(</span><span class="n">posfile</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">location</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">l_metal_insulator</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;    </span>
 <span class="sd">        For auto-matic k-grid(taken from vasp manual): </span>
 
@@ -289,7 +297,7 @@
 
 
 <span class="c1">#def get_cutoff_wfc_rho(loc, ps_info, atmsymbol, lcopy_pseudo=True):</span>
-<div class="viewcode-block" id="get_parameters_pseudo"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.get_parameters_pseudo">[docs]</a><span class="k">def</span> <span class="nf">get_parameters_pseudo</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">ps_info</span><span class="p">,</span> <span class="n">atmsymbol</span><span class="p">,</span> <span class="n">lcopy_pseudo</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>    
+<div class="viewcode-block" id="get_parameters_pseudo"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.get_parameters_pseudo">[docs]</a><span class="k">def</span> <span class="nf">get_parameters_pseudo</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">ps_info</span><span class="p">,</span> <span class="n">atmsymbol</span><span class="p">,</span> <span class="n">lcopy_pseudo</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>    
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    find </span>
 <span class="sd">    - the min kinetic energy cutoff</span>
@@ -473,7 +481,7 @@
 
 
 
-<div class="viewcode-block" id="delete_pseudo_pot"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.delete_pseudo_pot">[docs]</a><span class="k">def</span> <span class="nf">delete_pseudo_pot</span><span class="p">(</span><span class="n">pseudo_list</span><span class="p">,</span> <span class="n">lremove_pseudo</span><span class="p">,</span> <span class="n">location</span><span class="p">):</span>
+<div class="viewcode-block" id="delete_pseudo_pot"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.delete_pseudo_pot">[docs]</a><span class="k">def</span> <span class="nf">delete_pseudo_pot</span><span class="p">(</span><span class="n">pseudo_list</span><span class="p">,</span> <span class="n">lremove_pseudo</span><span class="p">,</span> <span class="n">location</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    remove the *UPF files in the current directory if not required</span>
 <span class="sd">    </span>
@@ -496,7 +504,7 @@
             
             
 <span class="c1">#-----------------TODO MODIFY .....BETTER ... WAY TO WRITE PARAMETERS............            </span>
-<div class="viewcode-block" id="get_input_parameters"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.get_input_parameters">[docs]</a><span class="k">def</span> <span class="nf">get_input_parameters</span><span class="p">(</span><span class="n">cal_type</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>   
+<div class="viewcode-block" id="get_input_parameters"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.get_input_parameters">[docs]</a><span class="k">def</span> <span class="nf">get_input_parameters</span><span class="p">(</span><span class="n">cal_type</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>   
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    read input parameters provided by the user for different calculation types, </span>
 <span class="sd">    such as scf, relax or vc-relax </span>
@@ -541,7 +549,7 @@
     
         
 <span class="c1">#def get_qe_input(posfile, location = None,  ps_info, lprint_cell = &#39;angstrom&#39;, lremove_pseudo=False, cal_type=None):</span>
-<div class="viewcode-block" id="get_qe_input"><a class="viewcode-back" href="../../../esta.qeBag.html#esta.qeBag.gen_qeinput.get_qe_input">[docs]</a><span class="k">def</span> <span class="nf">get_qe_input</span><span class="p">(</span><span class="n">posfile</span><span class="p">,</span> <span class="n">ps_info</span><span class="p">,</span> <span class="n">lprint_cell</span> <span class="o">=</span> <span class="s1">&#39;angstrom&#39;</span><span class="p">,</span> <span class="n">lremove_pseudo</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cal_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lspin</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="get_qe_input"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.gen_qeinput.get_qe_input">[docs]</a><span class="k">def</span> <span class="nf">get_qe_input</span><span class="p">(</span><span class="n">posfile</span><span class="p">,</span> <span class="n">ps_info</span><span class="p">,</span> <span class="n">lprint_cell</span> <span class="o">=</span> <span class="s1">&#39;angstrom&#39;</span><span class="p">,</span> <span class="n">lremove_pseudo</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cal_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lspin</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    generate qe input file using poscar and other input parameters</span>

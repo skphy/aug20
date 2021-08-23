@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -173,7 +181,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
 
-<div class="viewcode-block" id="grrm"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm">[docs]</a><span class="k">class</span> <span class="nc">grrm</span><span class="p">():</span>
+<div class="viewcode-block" id="grrm"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm">[docs]</a><span class="k">class</span> <span class="nc">grrm</span><span class="p">():</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    gauss class to extract the xyz file/files from the GRRM17 log file</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -181,7 +189,7 @@
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
     
-<div class="viewcode-block" id="grrm.get_atomic_positions"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atomic_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="grrm.get_atomic_positions"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atomic_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         
         
         <span class="sd">&#39;&#39;&#39;</span>
@@ -225,7 +233,7 @@
                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
                 <span class="k">return</span> <span class="kc">None</span></div>
 
-<div class="viewcode-block" id="grrm.get_all_atomic_positions_from_ITR_list"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atomic_positions_from_ITR_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="grrm.get_all_atomic_positions_from_ITR_list"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atomic_positions_from_ITR_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get xyz files: atomic positions and atomic labels from &quot;*_ITR_list.log&quot; file of GRRM17</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -294,7 +302,7 @@
                 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
                 <span class="k">return</span> <span class="kc">None</span></div>
             
-<div class="viewcode-block" id="grrm.get_xyz_file"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+<div class="viewcode-block" id="grrm.get_xyz_file"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get xyz file by reading the atomic positions and atomic labels: </span>
 
@@ -318,7 +326,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in xyz format&#39;</span><span class="p">)</span></div>
 
         
-<div class="viewcode-block" id="grrm.get_all_xyz_file"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+<div class="viewcode-block" id="grrm.get_all_xyz_file"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get all xyz file by reading the atomic positions and atomic labels: </span>
 
@@ -365,7 +373,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing all data (atomic structures:</span><span class="si">{}</span><span class="s1">) in xyz format&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>    </div>
         
         
-<div class="viewcode-block" id="grrm.get_all_xyz_in_a_file"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_in_a_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_in_a_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">comment</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>    
+<div class="viewcode-block" id="grrm.get_all_xyz_in_a_file"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_in_a_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_in_a_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">comment</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>    
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get all xyz file by reading the atomic positions and atomic labels: </span>
 
@@ -403,7 +411,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing all data (atomic structures:</span><span class="si">{}</span><span class="s1">) in xyz format in a single file&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>    </div>
         
         
-<div class="viewcode-block" id="grrm.get_energy"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="grrm.get_energy"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get Energy from *_ITR_list.log file of all TS structures</span>
 <span class="sd">        &#39;&#39;&#39;</span>

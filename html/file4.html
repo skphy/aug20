@@ -102,11 +102,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#esta-general-package">esta.general package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#it-reads">It reads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#it-writes">It writes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#more-to-add-sk">more to add …….sk!!</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#note">NOTE:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">NOTE:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#qebag-package">qeBag package</a></li>
 </ul>
 </li>
@@ -202,109 +197,58 @@ things to speed up the workflow.</p>
 <h1>esta.general package<a class="headerlink" href="#esta-general-package" title="Permalink to this headline">¶</a></h1>
 <span class="target" id="module-esta.general.aadhaar"></span><p>aadhaar class is a base class to read/write and process information
 related to atoms/molecules information such as atoms coord, atom labels,
-and types, and so on ..</p>
-<section id="it-reads">
-<h2>It reads<a class="headerlink" href="#it-reads" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>xyz file</p></li>
-<li><p>poscar file ….not yet completely done .. rather can be done using vaspBag crystal_latticee class</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="it-writes">
-<h2>It writes<a class="headerlink" href="#it-writes" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>poscar file from cell parameters and xyz file data</p></li>
-<li><p>xyz file/s</p></li>
-<li><p>xyz file with frozen and notfrozen atoms</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="more-to-add-sk">
-<h2>more to add …….sk!!<a class="headerlink" href="#more-to-add-sk" title="Permalink to this headline">¶</a></h2>
+and types, and so on!!</p>
+<p>It reads xyz file or poscar file (not yet completely done .. rather can
+be done using vaspBag crystal_latticee class</p>
+<p>It writes poscar file from cell parameters and xyz file data xyz file/s
+or xyz file with frozen and notfrozen atoms</p>
+<p>__author = ‘sk’
+__email  = <a class="reference external" href="mailto:'sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">‘sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>’
+__date   = ‘April 2017’
+__update = ‘1st August 2020, sk’</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.aadhaar.</span></span><span class="sig-name descname"><span class="pre">Aadhaar</span></span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>aadhaar class for structure related information</p>
-<p>** for more info for Class docstring, see the link:**
-.. _link https://numpydoc.readthedocs.io/en/latest/format.html
-…</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.exposure">
-<span class="sig-name descname"><span class="pre">exposure</span></span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.exposure" title="Permalink to this definition">¶</a></dt>
-<dd><p>Exposure in seconds.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.colorspace">
-<span class="sig-name descname"><span class="pre">colorspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rgb'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.colorspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Represent the photo in the given colorspace.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.gamma">
-<span class="sig-name descname"><span class="pre">gamma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.gamma" title="Permalink to this definition">¶</a></dt>
-<dd><p>Change the photo’s gamma exposure.</p>
-</dd></dl>
-
+<p>aadhaar class for structure related information handling.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_all_xyz_in_a_file">
 <span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_all_xyz_in_a_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id108"><span class="problematic" id="id109">all_</span></a>’+’.xyz’</p>
-</dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>outfile</cite></p>
-</dd>
-</dl>
+<dd><p>create single XYZ file for all xyz strcutures given the  atomic positions and atomic labels.
+Note that the similar atoms (identical symbols) are grouped together.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_poscar">
 <span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell_parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_poscar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_poscar" title="Permalink to this definition">¶</a></dt>
-<dd><p>write cell_parameters and atomic postions, atom labels etc in
-poscar file</p>
+<dd><p>create POSCAR file given the cell_parameters, atomic postions, and atom labels.
+Optionally the name of output POSCAR can be provided. When dealing with mutliple
+POSCAR file, better to provide the name of the output POSCAR file.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_file">
 <span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>name_outfile</cite></p>
-</dd>
-</dl>
+<dd><p>create XYZ file given the  atomic positions and atomic labels.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_frozen">
 <span class="sig-name descname"><span class="pre">get_xyz_frozen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frozen_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_frozan_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_frozen"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_frozen" title="Permalink to this definition">¶</a></dt>
 <dd><p>get xyz data with frozan and not frozen atoms in the output file</p>
-<blockquote>
-<div><p>frozen_tuple: tuple containg fixed atomic_positins, atomic_symbols, and atom index
-not_frozen_tuple: tuple containg not fixed atomic_positins, atomic_symbols, and atom index
-name_outfile: optional, name of the output file</p>
-</div></blockquote>
-<dl class="simple">
-<dt>output:</dt><dd><p>create ‘xyz_FROZEN’ type file containing information of frozen and not frozen atoms etc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frozen_tuple</strong> (<em>tuple</em>) – tuple containg fixed atomic_positins, atomic_symbols, and atom index</p></li>
+<li><p><strong>not_frozen_tuple</strong> (<em>tuple</em>) – tuple containg not fixed atomic_positins, atomic_symbols, and atom index</p></li>
+<li><p><strong>name_outfile</strong> (<em>str</em><em>, </em><em>optional</em>) – name of the output file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>name of xyz_frozen_file</strong> – create ‘xyz_FROZEN’ type file containing information of frozen and not frozen atoms etc</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
@@ -312,16 +256,8 @@ name_outfile: optional, name of the output file</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_grouped">
 <span class="sig-name descname"><span class="pre">get_xyz_grouped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_grouped"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_grouped" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels: use method</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>name_outfile</cite></p>
-</dd>
-</dl>
-<p>NOTE: similar atoms are grouped together</p>
+<dd><p>create XYZ file given the  atomic positions and atomic labels.
+Note that the similar atoms (identical symbols) are grouped together.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -343,7 +279,6 @@ name_outfile: optional, name of the output file</p>
 
 </dd></dl>
 
-</section>
 <span class="target" id="module-esta.general.add_const_to_dict"></span><span class="target" id="module-esta.general.add_vacuum_to_unit_cell"></span><dl class="py function">
 <dt class="sig sig-object py" id="esta.general.add_vacuum_to_unit_cell.add_vacuum">
 <span class="sig-prename descclassname"><span class="pre">esta.general.add_vacuum_to_unit_cell.</span></span><span class="sig-name descname"><span class="pre">add_vacuum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">LV1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacuum</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/add_vacuum_to_unit_cell.html#add_vacuum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.add_vacuum_to_unit_cell.add_vacuum" title="Permalink to this definition">¶</a></dt>
@@ -1451,14 +1386,13 @@ email = <a class="reference external" href="mailto:'sonukumar&#46;physics&#37;&#
 <dd><p>return list of atomic symbols from list of atomic numbers</p>
 </dd></dl>
 
-<span class="target" id="module-esta.general.thermo"></span><p>this is thermo class for calculating the
-energy contribution coming from the translational, rotational , vibrational
-and electronic degrees of freedom towards entropy, internal energy, and
-specific heat</p>
-<p>In Nutshell: need three components
-1) enthalpy component H = E + PV
-2) entropy components  S
-3) free energy components  G = H -TS = E + PV - TS</p>
+<span class="target" id="module-esta.general.thermo"></span><p>this is thermo class for calculating the energy contribution coming from
+the translational, rotational , vibrational and electronic degrees of freedom
+towards entropy, internal energy, andspecific heat</p>
+<p>In Nutshell: we need three components</p>
+<p>enthalpy component H = E + PV</p>
+<p>entropy components  S</p>
+<p>free energy components  G = H -TS = E + PV - TS</p>
 <p>Model under which the thermodynamical quantities can be calculed:</p>
 <ol class="arabic simple">
 <li><p>Ideal gas approximation</p></li>
@@ -1466,19 +1400,14 @@ specific heat</p>
 <li><p>Hindered rotor and vibrator</p></li>
 <li><p>crystalline materials case</p></li>
 </ol>
-<section id="note">
-<h2>NOTE:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>for thery:</p>
+<p class="rubric">Notes</p>
+<p>For More information related to theory, see the following:</p>
 <p>see gaussian thermo pdf file,</p>
 <p>or chapter 10: essential of compuational chemisty,</p>
 <p>or html file in the present folder</p>
 <p>or ‘A Note on Thermochemistry’ by openmopac manual</p>
 <p>or Introduction to computational chemistry by Jensen chapter 14.5</p>
-</div></blockquote>
-<p>author: sk
-email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
-date: oct 2020</p>
+<p>author: sk, email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoDyn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoDyn" title="Permalink to this definition">¶</a></dt>
@@ -1486,8 +1415,8 @@ date: oct 2020</p>
 <p>thermodyn class to find energies (eV or other units) for
 entropy, internal energy, and specific heat with respect to
 translational, rotational, vibrational, and electronic degrees of freedom</p>
-<p>Note: all energies are in eV  or SI units</p>
-<p>for thery: see gaussian thermo pdf file, or chapter 10: essential of compuational
+<p>Note theat all energies are in eV  or SI units</p>
+<p>for theory: see gaussian thermo pdf file, or chapter 10: essential of compuational
 chemisty, or html file in the present folder</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn.get_E_vib">
@@ -1507,10 +1436,9 @@ and 3N−5 degrees of freedom for linear molecules (where N is the number of ato
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn.get_moment_inertia">
 <span class="sig-name descname"><span class="pre">get_moment_inertia</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoDyn.get_moment_inertia"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoDyn.get_moment_inertia" title="Permalink to this definition">¶</a></dt>
 <dd><p>get moment of inertia of the molecule or other possible system</p>
-<p>formula: see A note on thermochemistry or else ………………</p>
-<ul class="simple">
-<li><p>from A note on thermochemisty:</p></li>
-</ul>
+<p>formula: see A note on thermochemistry or else where!!</p>
+<p class="rubric">Notes</p>
+<p>Taken from A note on thermochemisty:</p>
 <p>IA = Σimi(RAi)2, where i runs over all atoms in the system, mi
 is the mass of the atom in amu, and RAi is the distance from the
 axis of rotation, A, to atom i in Ångstroms.</p>
@@ -1536,17 +1464,22 @@ The eigenvectors associated with the eigenvalues are the axes of rotation, A, B,
 <p>Rotational constants in cm-1:  A = hN1016/(8π2c)/(amu Ångstrom2)
 A (in MHz) = 5.053791x105/(amu Ångstrom2)
 A (in cm-1) =  5.053791x105/c(amu Ångstrom2)  = 16.85763/(amu Ångstrom2)</p>
-<blockquote>
-<div><p>array: cartesian coordinates of rank 2;  [:,:]
-list: atomic symbols (need to calculate the Molecular mass or total mass)</p>
-</div></blockquote>
-<blockquote>
-<div><p>vector:  moment of inertia about axis of rotation A, B, and C;
-array: array of rank2, principle axis of rotations, A, B, and C</p>
-<blockquote>
-<div><p>about which moment of inertia is calculated</p>
-</div></blockquote>
-</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coordinates</strong> (<em>array</em>) – cartesian coordinates of rank 2;  [:,:]</p></li>
+<li><p><strong>symbols</strong> (<em>list</em>) – list of atomic symbols (need to calculate the Molecular mass or total mass)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>vector</strong> (<em>array</em>) – moment of inertia about axis of rotation A, B, and C;</p></li>
+<li><p><strong>principle axis</strong> (<em>array</em>) – array of rank2, principle axis of rotations, A, B, and C
+about which moment of inertia is calculated</p></li>
+</ul>
+</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -1563,14 +1496,6 @@ array: array of rank2, principle axis of rotations, A, B, and C</p>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>Harmonic thermodynamics</p>
-<blockquote>
-<div><p>E_dft: float
-vib_freq: array
-temp: float</p>
-</div></blockquote>
-<blockquote>
-<div><p>see respecitve methods in the class</p>
-</div></blockquote>
 <p>Harmonic limit: taken from ASE website:
 The conversion of electronic structure calculation information into
 thermodynamic properties is less established for adsorbates. However,
@@ -1578,21 +1503,21 @@ the simplest approach often taken is to treat all 3N
 degrees of freedom of the adsorbate harmonically since the adsorbate often
 has no real translational or rotational degrees of freedom.</p>
 <dl class="simple">
-<dt>U(T) = <a href="#id110"><span class="problematic" id="id111">E_</span></a>   ext{elec} + <a href="#id112"><span class="problematic" id="id113">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
+<dt>U(T) = <a href="#id107"><span class="problematic" id="id108">E_</span></a>   ext{elec} + <a href="#id109"><span class="problematic" id="id110">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id114"><span class="problematic" id="id115">k_</span></a>       ext{B} T} - 1 }</p>
+<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id111"><span class="problematic" id="id112">k_</span></a>       ext{B} T} - 1 }</p>
 <blockquote>
 <div><dl class="simple">
-<dt>S = <a href="#id116"><span class="problematic" id="id117">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
+<dt>S = <a href="#id113"><span class="problematic" id="id114">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{<a href="#id118"><span class="problematic" id="id119">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id120"><span class="problematic" id="id121">k_</span></a>   ext{B}T}-1
+<p>rac{epsilon_i}{<a href="#id115"><span class="problematic" id="id116">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id117"><span class="problematic" id="id118">k_</span></a>   ext{B}T}-1
 ight)} -</p>
 <blockquote>
-<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id122"><span class="problematic" id="id123">k_</span></a>    ext{B}T}</p>
+<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id119"><span class="problematic" id="id120">k_</span></a>    ext{B}T}</p>
 </div></blockquote>
 <p>ight)
 ight]</p>
@@ -1605,44 +1530,38 @@ U(T)=Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_E_vib">
 <span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">set_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_E_vib" title="Permalink to this definition">¶</a></dt>
 <dd><p>find the  in internal energy part due to vibrations from
-0K to a given temperature in eV</p>
-<p>get vibration contribution to internal energy:</p>
-<p>all DOF are considered within the harmonic approximation</p>
-<blockquote>
-<div><p>vib energy contri in eV.</p>
-</div></blockquote>
+0K to a given temperature in eV. All DOF are considered within the harmonic
+approximation</p>
+<p>Output the vibration contribution to internal energy:</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy">
 <span class="sig-name descname"><span class="pre">get_Helmholtz_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_Helmholtz_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
+<dd><p>calculate the Helmholtz free energy</p>
+<p class="rubric">Notes</p>
+<p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
 <p>F(T) = U(T)−TS(T) – Helmholtz free energy</p>
-<p>assuming PV term to be negligible, we have G(T) ~ F(T)</p>
-<p>NOTE: if we assumes that the pV term in H=U+pV is negligible, then the
+<p>assuming PV term to be negligible, we have G(T) equal to F(T)</p>
+<p>If we assumes that the pV term in H=U+pV is negligible, then the
 Helmholtz free energy can be used to approximate the Gibbs free energy, as G=F+pV.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_S_vib">
 <span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-<p>find the entropy due to vibrations for vibrations (3N DOF)
+<dd><p>get vibrational entropy in eV/K (3N DOF)
 given in eV</p>
-<blockquote>
-<div><p>entropy and entropy energy in eV/K  and ev/k, respectively.</p>
-</div></blockquote>
+<p>output is entropy and entropy energy in eV/K  and ev/k, respectively.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_internal_energy">
 <span class="sig-name descname"><span class="pre">get_internal_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_internal_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_internal_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>find internal energy, in eV, in the harmonic approximation taking all DOF (3N)
+<dd><p>find internal energy in eV at a given T in the harmonic approximation taking all DOF (3N)
 at a given temperature (K).</p>
+<p class="rubric">Notes</p>
 <p>E(T) = U(T) = Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<blockquote>
-<div><p>internal energy contribution at given T in eV</p>
-</div></blockquote>
 </dd></dl>
 
 <dl class="py method">
@@ -1668,14 +1587,19 @@ at a given temperature (K).</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy">
 <span class="sig-name descname"><span class="pre">get_Gibbs_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_Gibbs_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
+<dd><p>calculate the free energy G at a given temp and pressue</p>
+<p class="rubric">Notes</p>
+<p>(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
+<p>E_DFT is energy from DFT calculation ror some other nonDFT calculations</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_enthalpy">
 <span class="sig-name descname"><span class="pre">get_enthalpy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_enthalpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_enthalpy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there
-H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity at const P)</p>
+<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there</p>
+<p class="rubric">Notes</p>
+<p>H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity
+at const P)</p>
 <p>H(T) = Eelec + EZPE + ∫ C_P dT; integral from 0–&gt;T</p>
 <p>Cp = kB + CV,trans + CV,rot + CV,vib + CV,elec</p>
 <p>∫CV,vib dT = ∑  ϵi/exp ( ϵi/kBT−1) ; for linear mol = 3N-5 and 3N-6 nonlinear vibrations</p>
@@ -1684,11 +1608,9 @@ H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_entropy">
 <span class="sig-name descname"><span class="pre">get_entropy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_entropy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_entropy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate entropy S(T,P) = S(T,P∘) − kB ln P/P∘</p>
-<blockquote>
-<div><p>= S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
-</div></blockquote>
-<p>print(‘Entropy components at T = 298.15 K and P = 101325.0 Pa:’)</p>
+<dd><p>calculate entropy S(T,P) = S(T,P_0) − kB ln P/P_0</p>
+<p class="rubric">Notes</p>
+<p>S =  S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
 <p>1 Pa = 1 N / m2</p>
 </dd></dl>
 
@@ -1701,258 +1623,6 @@ H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat
 <p>Atomic lattice thermodynamics</p>
 </dd></dl>
 
-</section>
-<span class="target" id="module-esta.general.thermo_for_TS1_eth"></span><p>this is thermo class for calculating the
-energy contribution coming from the translational, rotational , vibrational
-and electronic degrees of freedom towards entropy, internal energy, and
-specific heat</p>
-<p>In Nutshell: need three components
-1) enthalpy component H = E + PV
-2) entropy components  S
-3) free energy components  G = H -TS = E + PV - TS</p>
-<p>Model under which the thermodynamical quantities can be calculed:</p>
-<ol class="arabic simple">
-<li><p>Ideal gas approximation</p></li>
-<li><p>Harmonic approx</p></li>
-<li><p>Hindered rotor and vibrator</p></li>
-<li><p>crystalline materials case</p></li>
-</ol>
-<section id="id3">
-<h2>NOTE:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>for thery:</p>
-<p>see gaussian thermo pdf file,</p>
-<p>or chapter 10: essential of compuational chemisty,</p>
-<p>or html file in the present folder</p>
-<p>or ‘A Note on Thermochemistry’ by openmopac manual</p>
-<p>or Introduction to computational chemistry by Jensen chapter 14.5</p>
-</div></blockquote>
-<p>author: sk
-email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
-date: oct 2020</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>thermodyn class to find energies (eV or other units) for
-entropy, internal energy, and specific heat with respect to
-translational, rotational, vibrational, and electronic degrees of freedom</p>
-<p>Note: all energies are in eV  or SI units</p>
-<p>for thery: see gaussian thermo pdf file, or chapter 10: essential of compuational
-chemisty, or html file in the present folder</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_E_vib">
-<span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_E_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get vibration contribution to internal energy:</p>
-<p>it contains vibtaration heat capacity contains 3N−6 degrees of freedom for nonlinear molecules
-and 3N−5 degrees of freedom for linear molecules (where N is the number of atoms)</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_S_vib">
-<span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_moment_inertia">
-<span class="sig-name descname"><span class="pre">get_moment_inertia</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_moment_inertia"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_moment_inertia" title="Permalink to this definition">¶</a></dt>
-<dd><p>get moment of inertia of the molecule or other possible system</p>
-<p>formula: see A note on thermochemistry or else ………………</p>
-<ul class="simple">
-<li><p>from A note on thermochemisty:</p></li>
-</ul>
-<p>IA = Σimi(RAi)2, where i runs over all atoms in the system, mi
-is the mass of the atom in amu, and RAi is the distance from the
-axis of rotation, A, to atom i in Ångstroms.</p>
-<p>The axes of rotation are calculated as follows:</p>
-<p>First, a 3 by 3 matrix, t,  is constructed, with the elements of t being:</p>
-<p>t1,1 =  Y2 +  Z2 = Σimi(yi2 + zi2)
-t1,2 =  -X.Y = -Σimixiyi
-t2,2 =  X2 +  Z2 = Σimi(xi2 + zi2)
-t1,3 =  -X.Z = -Σimixizi
-t2,3 =  -Y.Z = -Σimiyizi
-t3,3 =  X2 +  Y2 = Σimi(xi2 + yi2)</p>
-<p>where mi is the mass of the atom in amu, and xi, yi,
-and zi, are the Cartesian coordinates of the atoms, in Ångstroms.
-Then t is diagonalized. The resulting eigenvalues, (amu Ångstrom2), are
-divided by N.A2, where N=Avogardo’s number and A = number of Ångstroms in a
-centimeter, to give the moments of inertia in g.cm2.  Because a useful unit
-is 10-40.g.cm2, the moments of inertia are multiplied by 1040 before being printed.
-The eigenvectors associated with the eigenvalues are the axes of rotation, A, B, and C.</p>
-<dl class="simple">
-<dt>Useful conversion factors</dt><dd><p>1 g cm2  = 1.660540x10-40  (amu Ångstrom2)</p>
-</dd>
-</dl>
-<p>Rotational constants in cm-1:  A = hN1016/(8π2c)/(amu Ångstrom2)
-A (in MHz) = 5.053791x105/(amu Ångstrom2)
-A (in cm-1) =  5.053791x105/c(amu Ångstrom2)  = 16.85763/(amu Ångstrom2)</p>
-<blockquote>
-<div><p>array: cartesian coordinates of rank 2;  [:,:]
-list: atomic symbols (need to calculate the Molecular mass or total mass)</p>
-</div></blockquote>
-<blockquote>
-<div><p>vector:  moment of inertia about axis of rotation A, B, and C;
-array: array of rank2, principle axis of rotations, A, B, and C</p>
-<blockquote>
-<div><p>about which moment of inertia is calculated</p>
-</div></blockquote>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_zpe">
-<span class="sig-name descname"><span class="pre">get_zpe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_zpe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_zpe" title="Permalink to this definition">¶</a></dt>
-<dd><p>get quantum mechanical zpe energy in eV</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<blockquote>
-<div><p>Harmonic thermodynamics</p>
-<blockquote>
-<div><p>E_dft: float
-vib_freq: array
-temp: float</p>
-</div></blockquote>
-<blockquote>
-<div><p>see respecitve methods in the class</p>
-</div></blockquote>
-<p>Harmonic limit: taken from ASE website:
-The conversion of electronic structure calculation information into
-thermodynamic properties is less established for adsorbates. However,
-the simplest approach often taken is to treat all 3N
-degrees of freedom of the adsorbate harmonically since the adsorbate often
-has no real translational or rotational degrees of freedom.</p>
-<dl class="simple">
-<dt>U(T) = <a href="#id124"><span class="problematic" id="id125">E_</span></a>   ext{elec} + <a href="#id126"><span class="problematic" id="id127">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id128"><span class="problematic" id="id129">k_</span></a>       ext{B} T} - 1 }</p>
-<blockquote>
-<div><dl class="simple">
-<dt>S = <a href="#id130"><span class="problematic" id="id131">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>rac{epsilon_i}{<a href="#id132"><span class="problematic" id="id133">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id134"><span class="problematic" id="id135">k_</span></a>   ext{B}T}-1
-ight)} -</p>
-<blockquote>
-<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id136"><span class="problematic" id="id137">k_</span></a>    ext{B}T}</p>
-</div></blockquote>
-<p>ight)
-ight]</p>
-<blockquote>
-<div><p>i.e.
-U(T)=Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<p>S=kB ∑iharm DOF[ϵi kBT(e ϵi/kBT−1)−ln(1−e−ϵi/kBT)]</p>
-</div></blockquote>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_E_vib">
-<span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_E_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>find the  in internal energy part due to vibrations from
-0K to a given temperature in eV</p>
-<p>get vibration contribution to internal energy:</p>
-<p>all DOF are considered within the harmonic approximation</p>
-<blockquote>
-<div><p>vib energy contri in eV.</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_Helmholtz_free_energy">
-<span class="sig-name descname"><span class="pre">get_Helmholtz_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_Helmholtz_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_Helmholtz_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
-<p>F(T) = U(T)−TS(T) – Helmholtz free energy</p>
-<p>assuming PV term to be negligible, we have G(T) ~ F(T)</p>
-<p>NOTE: if we assumes that the pV term in H=U+pV is negligible, then the
-Helmholtz free energy can be used to approximate the Gibbs free energy, as G=F+pV.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_S_vib">
-<span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-<p>find the entropy due to vibrations for vibrations (3N DOF)
-given in eV</p>
-<blockquote>
-<div><p>entropy and entropy energy in eV/K  and ev/k, respectively.</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_internal_energy">
-<span class="sig-name descname"><span class="pre">get_internal_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_internal_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_internal_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>find internal energy, in eV, in the harmonic approximation taking all DOF (3N)
-at a given temperature (K).</p>
-<p>E(T) = U(T) = Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<blockquote>
-<div><p>internal energy contribution at given T in eV</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_zpe">
-<span class="sig-name descname"><span class="pre">get_zpe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_zpe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_zpe" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the zero-point vibrational energy eV.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHindredRotVib">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHindredRotVib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Hinder vibrational and rotation oscillator thermodynamics</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#esta.general.thermo_for_TS1_eth.ThermoDyn" title="esta.general.thermo_for_TS1_eth.ThermoDyn"><code class="xref py py-class docutils literal notranslate"><span class="pre">esta.general.thermo_for_TS1_eth.ThermoDyn</span></code></a></p>
-<p>calculate thermodynamic quantities within the ideal gas approximation</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_Gibbs_free_energy">
-<span class="sig-name descname"><span class="pre">get_Gibbs_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_Gibbs_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_Gibbs_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_enthalpy">
-<span class="sig-name descname"><span class="pre">get_enthalpy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_enthalpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_enthalpy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there
-H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity at const P)</p>
-<p>H(T) = Eelec + EZPE + ∫ C_P dT; integral from 0–&gt;T</p>
-<p>Cp = kB + CV,trans + CV,rot + CV,vib + CV,elec</p>
-<p>∫CV,vib dT = ∑  ϵi/exp ( ϵi/kBT−1) ; for linear mol = 3N-5 and 3N-6 nonlinear vibrations</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_entropy">
-<span class="sig-name descname"><span class="pre">get_entropy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S_trans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_rot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_entropy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_entropy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate entropy S(T,P) = S(T,P∘) − kB ln P/P∘</p>
-<blockquote>
-<div><p>= S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
-</div></blockquote>
-<p>print(‘Entropy components at T = 298.15 K and P = 101325.0 Pa:’)</p>
-<p>1 Pa = 1 N / m2</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoLattice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoLattice" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Atomic lattice thermodynamics</p>
-</dd></dl>
-
-</section>
 <span class="target" id="module-esta.general.xyz"></span><p>Xyz class to handle data related to xyz file/files</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.xyz.Xyz">
@@ -2280,21 +1950,21 @@ occupations = np.zeros_like(energies)</p>
 lines:  4152,42       89%</p>
 </div></blockquote>
 </dd>
-<dt>IF ( <a href="#id138"><span class="problematic" id="id139">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
+<dt>IF ( <a href="#id121"><span class="problematic" id="id122">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
 <div><p>!
-CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id140"><span class="problematic" id="id141">ef_up_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id123"><span class="problematic" id="id124">ef_up_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id142"><span class="problematic" id="id143">ef_dw_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id125"><span class="problematic" id="id126">ef_dw_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id144"><span class="problematic" id="id145">nel_up_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id127"><span class="problematic" id="id128">nel_up_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id146"><span class="problematic" id="id147">nel_down_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id129"><span class="problematic" id="id130">nel_down_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
 !</p>
 </div></blockquote>
 <dl class="simple">
 <dt>ELSE</dt><dd><p>!
-CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id148"><span class="problematic" id="id149">ef_</span></a> , FOUND=found )
+CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id131"><span class="problematic" id="id132">ef_</span></a> , FOUND=found )
 IF (ierr/=0) RETURN</p>
 </dd>
 </dl>
@@ -2350,21 +2020,21 @@ occupations = np.zeros_like(energies)</p>
 lines:  4152,42       89%</p>
 </div></blockquote>
 </dd>
-<dt>IF ( <a href="#id150"><span class="problematic" id="id151">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
+<dt>IF ( <a href="#id133"><span class="problematic" id="id134">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
 <div><p>!
-CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id152"><span class="problematic" id="id153">ef_up_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id135"><span class="problematic" id="id136">ef_up_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id154"><span class="problematic" id="id155">ef_dw_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id137"><span class="problematic" id="id138">ef_dw_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id156"><span class="problematic" id="id157">nel_up_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id139"><span class="problematic" id="id140">nel_up_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
-CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id158"><span class="problematic" id="id159">nel_down_</span></a>, IERR=ierr )
+CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id141"><span class="problematic" id="id142">nel_down_</span></a>, IERR=ierr )
 IF (ierr/=0) RETURN
 !</p>
 </div></blockquote>
 <dl class="simple">
 <dt>ELSE</dt><dd><p>!
-CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id160"><span class="problematic" id="id161">ef_</span></a> , FOUND=found )
+CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id143"><span class="problematic" id="id144">ef_</span></a> , FOUND=found )
 IF (ierr/=0) RETURN</p>
 </dd>
 </dl>
@@ -2406,7 +2076,7 @@ location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.delete_pseudo_pot">
 <span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/gen_qeinput.html#delete_pseudo_pot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.gen_qeinput.delete_pseudo_pot" title="Permalink to this definition">¶</a></dt>
-<dd><p>remove the <a href="#id4"><span class="problematic" id="id5">*</span></a>UPF files in the current directory if not required</p>
+<dd><p>remove the <a href="#id3"><span class="problematic" id="id4">*</span></a>UPF files in the current directory if not required</p>
 </dd></dl>
 
 <dl class="py function">
@@ -2539,7 +2209,7 @@ author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.delete_pseudo_pot">
 <span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/gen_qeinput1.html#delete_pseudo_pot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.gen_qeinput1.delete_pseudo_pot" title="Permalink to this definition">¶</a></dt>
-<dd><p>remove the <a href="#id6"><span class="problematic" id="id7">*</span></a>UPF files in the current directory if not required</p>
+<dd><p>remove the <a href="#id5"><span class="problematic" id="id6">*</span></a>UPF files in the current directory if not required</p>
 </dd></dl>
 
 <dl class="py function">
@@ -2629,7 +2299,7 @@ author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.delete_pseudo_pot">
 <span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/gen_qeinput2.html#delete_pseudo_pot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.gen_qeinput2.delete_pseudo_pot" title="Permalink to this definition">¶</a></dt>
-<dd><p>remove the <a href="#id8"><span class="problematic" id="id9">*</span></a>UPF files in the current directory if not required</p>
+<dd><p>remove the <a href="#id7"><span class="problematic" id="id8">*</span></a>UPF files in the current directory if not required</p>
 </dd></dl>
 
 <dl class="py function">
@@ -2717,7 +2387,7 @@ location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.delete_pseudo_pot">
 <span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/gen_qeinput_adv.html#delete_pseudo_pot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.delete_pseudo_pot" title="Permalink to this definition">¶</a></dt>
-<dd><p>remove the <a href="#id10"><span class="problematic" id="id11">*</span></a>UPF files in the current directory if not required</p>
+<dd><p>remove the <a href="#id9"><span class="problematic" id="id10">*</span></a>UPF files in the current directory if not required</p>
 </dd></dl>
 
 <dl class="py function">
@@ -2904,9 +2574,9 @@ link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/I
 <p>2)
 – to store data (atom no, no of images, atomic symbols,</p>
 <blockquote>
-<div><p>atomic positions) from <a href="#id12"><span class="problematic" id="id13">*</span></a>axsf data</p>
+<div><p>atomic positions) from <a href="#id11"><span class="problematic" id="id12">*</span></a>axsf data</p>
 </div></blockquote>
-<p>– to generate xyz files from <a href="#id14"><span class="problematic" id="id15">*</span></a>axsf file from xcrysden</p>
+<p>– to generate xyz files from <a href="#id13"><span class="problematic" id="id14">*</span></a>axsf file from xcrysden</p>
 <p>3)
 – to read pathx files; where x = 0, 1, 2, ….</p>
 <blockquote>
@@ -2963,7 +2633,7 @@ date: July, 2020</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_axsf">
 <span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe.html#neb.read_axsf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_axsf" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id16"><span class="problematic" id="id17">*</span></a>axsf file name</p>
+<div><p>str: <a href="#id15"><span class="problematic" id="id16">*</span></a>axsf file name</p>
 </div></blockquote>
 <blockquote>
 <div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
@@ -2978,10 +2648,10 @@ rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_path">
 <span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe.html#neb.read_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_path" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id18"><span class="problematic" id="id19">*</span></a>path file name
+<div><p>str: <a href="#id17"><span class="problematic" id="id18">*</span></a>path file name
 str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
 <blockquote>
-<div><p>present in <a href="#id20"><span class="problematic" id="id21">*</span></a>path file</p>
+<div><p>present in <a href="#id19"><span class="problematic" id="id20">*</span></a>path file</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
@@ -3001,7 +2671,7 @@ scalar: energy</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_xsf">
 <span class="sig-name descname"><span class="pre">read_xsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xsf_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe.html#neb.read_xsf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_xsf" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id22"><span class="problematic" id="id23">*</span></a>xsf file name</p>
+<div><p>str: <a href="#id21"><span class="problematic" id="id22">*</span></a>xsf file name</p>
 </div></blockquote>
 <blockquote>
 <div><p>rank 2 array: atomic positions: array: rank 3 array of shape (natoms, 3)
@@ -3136,9 +2806,9 @@ link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/I
 <p>2)
 – to store data (atom no, no of images, atomic symbols,</p>
 <blockquote>
-<div><p>atomic positions) from <a href="#id24"><span class="problematic" id="id25">*</span></a>axsf data</p>
+<div><p>atomic positions) from <a href="#id23"><span class="problematic" id="id24">*</span></a>axsf data</p>
 </div></blockquote>
-<p>– to generate xyz files from <a href="#id26"><span class="problematic" id="id27">*</span></a>axsf file from xcrysden</p>
+<p>– to generate xyz files from <a href="#id25"><span class="problematic" id="id26">*</span></a>axsf file from xcrysden</p>
 <p>3)
 – to read pathx files; where x = 0, 1, 2, ….</p>
 <blockquote>
@@ -3195,7 +2865,7 @@ date: July, 2020</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_axsf">
 <span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe0.html#neb.read_axsf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_axsf" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id28"><span class="problematic" id="id29">*</span></a>axsf file name</p>
+<div><p>str: <a href="#id27"><span class="problematic" id="id28">*</span></a>axsf file name</p>
 </div></blockquote>
 <blockquote>
 <div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
@@ -3210,10 +2880,10 @@ rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_path">
 <span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe0.html#neb.read_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_path" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id30"><span class="problematic" id="id31">*</span></a>path file name
+<div><p>str: <a href="#id29"><span class="problematic" id="id30">*</span></a>path file name
 str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
 <blockquote>
-<div><p>present in <a href="#id32"><span class="problematic" id="id33">*</span></a>path file</p>
+<div><p>present in <a href="#id31"><span class="problematic" id="id32">*</span></a>path file</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
@@ -3233,7 +2903,7 @@ scalar: energy</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_xsf">
 <span class="sig-name descname"><span class="pre">read_xsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xsf_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe0.html#neb.read_xsf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_xsf" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id34"><span class="problematic" id="id35">*</span></a>xsf file name</p>
+<div><p>str: <a href="#id33"><span class="problematic" id="id34">*</span></a>xsf file name</p>
 </div></blockquote>
 <blockquote>
 <div><p>rank 2 array: atomic positions: array: rank 3 array of shape (natoms, 3)
@@ -3369,9 +3039,9 @@ link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/I
 <p>2)
 – to store data (atom no, no of images, atomic symbols,</p>
 <blockquote>
-<div><p>atomic positions) from <a href="#id36"><span class="problematic" id="id37">*</span></a>axsf data</p>
+<div><p>atomic positions) from <a href="#id35"><span class="problematic" id="id36">*</span></a>axsf data</p>
 </div></blockquote>
-<p>– to generate xyz files from <a href="#id38"><span class="problematic" id="id39">*</span></a>axsf file from xcrysden</p>
+<p>– to generate xyz files from <a href="#id37"><span class="problematic" id="id38">*</span></a>axsf file from xcrysden</p>
 <p>3)
 – to read pathx files; where x = 0, 1, 2, ….</p>
 <blockquote>
@@ -3391,7 +3061,7 @@ Place: QCL, ICReDD, Japan</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.read_axsf">
 <span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe1.html#neb.read_axsf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.read_axsf" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id40"><span class="problematic" id="id41">*</span></a>axsf file name</p>
+<div><p>str: <a href="#id39"><span class="problematic" id="id40">*</span></a>axsf file name</p>
 </div></blockquote>
 <blockquote>
 <div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
@@ -3406,10 +3076,10 @@ rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
 <dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.read_path">
 <span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/neb_qe1.html#neb.read_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.read_path" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>str: <a href="#id42"><span class="problematic" id="id43">*</span></a>path file name
+<div><p>str: <a href="#id41"><span class="problematic" id="id42">*</span></a>path file name
 str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
 <blockquote>
-<div><p>present in <a href="#id44"><span class="problematic" id="id45">*</span></a>path file</p>
+<div><p>present in <a href="#id43"><span class="problematic" id="id44">*</span></a>path file</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
@@ -4027,7 +3697,7 @@ atoms. I want to have a sum for all atoms. Separately s and p.</p>
 <dl class="simple">
 <dt>find sum for all atoms (= Energy, Sum of LDOS, Sum of Pz-PDOS,</dt><dd><p>Sum of Px-PDOS, Sum of Py-PDOS).</p>
 </dd>
-<dt><a href="#id46"><span class="problematic" id="id47">**</span></a>NOTE: in a single directory keep on one type of states of atoms (may be same or different</dt><dd><p>atoms); e.g. s, p, or d only for B atoms !!***</p>
+<dt><a href="#id45"><span class="problematic" id="id46">**</span></a>NOTE: in a single directory keep on one type of states of atoms (may be same or different</dt><dd><p>atoms); e.g. s, p, or d only for B atoms !!***</p>
 </dd>
 </dl>
 <p>author: skumar
@@ -4253,7 +3923,7 @@ calculation</p>
 <dt class="sig sig-object py" id="esta.qeBag.xml_qe.read_qe_xml">
 <span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe.</span></span><span class="sig-name descname"><span class="pre">read_qe_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/qeBag/xml_qe.html#read_qe_xml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.qeBag.xml_qe.read_qe_xml" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>Parse data-file-schema.xml or another <a href="#id48"><span class="problematic" id="id49">*</span></a>xml file of qe version 6.4.1/6.2</p>
+<div><p>Parse data-file-schema.xml or another <a href="#id47"><span class="problematic" id="id48">*</span></a>xml file of qe version 6.4.1/6.2</p>
 <blockquote>
 <div><dl class="simple">
 <dt>string: ‘data-file-schema.xml’ or input xml file containing crystal str and electronic</dt><dd><p>str. information of calculations carrired out by qe code</p>
@@ -4356,22 +4026,6 @@ This package does processing of the VASP sofware output files</p>
 </section>
 <section id="esta-vaspbag-inout-package">
 <h1>esta.vaspBag.inout package<a class="headerlink" href="#esta-vaspbag-inout-package" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-esta.vaspBag.inout.bending_nanoribbon"></span><dl class="py function">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.bending_nanoribbon.get_bent_structure">
-<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.bending_nanoribbon.</span></span><span class="sig-name descname"><span class="pre">get_bent_structure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_degree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/bending_nanoribbon.html#get_bent_structure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.bending_nanoribbon.get_bent_structure" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div><p>scalar: angle_degree</p>
-<p>input file name must be ‘POSCAR’</p>
-</div></blockquote>
-<blockquote>
-<div><p>string: filename containg data for bent str in POSCAR format</p>
-</div></blockquote>
-<p>read related information etc from other folder ..for bending</p>
-<p>Date: 2018
-Author: sonu
-Email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
-</dd></dl>
-
 <span class="target" id="module-esta.vaspBag.inout.crystal_lattice"></span><p>Crystal lattice class to define lattice parameters and basis
 crystal = lattice + basis (atoms or molecules )</p>
 <p>Author: Sonu Kumar
@@ -4968,7 +4622,7 @@ H          5.785226928656         -6.401397049756         -5.821165568507
 H          5.502797674893         -6.666317168224         -3.712799145260</p>
 </dd></dl>
 
-<span class="target" id="module-esta.grrmBag.com2xyz"></span><p>get xyz file from <a href="#id50"><span class="problematic" id="id51">*</span></a>com file of the GRRM or gaussian input file</p>
+<span class="target" id="module-esta.grrmBag.com2xyz"></span><p>get xyz file from <a href="#id49"><span class="problematic" id="id50">*</span></a>com file of the GRRM or gaussian input file</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.grrmBag.com2xyz.get_coord">
 <span class="sig-prename descclassname"><span class="pre">esta.grrmBag.com2xyz.</span></span><span class="sig-name descname"><span class="pre">get_coord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/com2xyz.html#get_coord"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.com2xyz.get_coord" title="Permalink to this definition">¶</a></dt>
@@ -5142,7 +4796,7 @@ Length (A amu1/2)       Energy (Hartree)
 <dd><p>other options in GRRM code for calculation types
 e.g:</p>
 <p>Options
-sublink=/home/kumarsonu/bin/<a href="#id162"><span class="problematic" id="id163">link_excode_allv3.1_</span></a>.py
+sublink=/home/kumarsonu/bin/<a href="#id145"><span class="problematic" id="id146">link_excode_allv3.1_</span></a>.py
 Add Interaction
 Fragm.1=56,57,58,1
 Fragm.2=59-62
@@ -5228,7 +4882,7 @@ _________________ –&gt; all of these variable read form 1xyz file ..by</p>
 <dd><p>other options in GRRM code for calculation types
 e.g:</p>
 <p>Options
-sublink=/home/kumarsonu/bin/<a href="#id164"><span class="problematic" id="id165">link_excode_allv3.1_</span></a>.py
+sublink=/home/kumarsonu/bin/<a href="#id147"><span class="problematic" id="id148">link_excode_allv3.1_</span></a>.py
 Add Interaction
 Fragm.1=56,57,58,1
 Fragm.2=59-62
@@ -5328,7 +4982,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.input_grrm_advv.</span></span><span class="sig-name descname"><span class="pre">GenerateCom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/input_grrm_advv.html#GenerateCom"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>python class to generate input files (<a href="#id52"><span class="problematic" id="id53">*</span></a>.com file) for different type of
+<p>python class to generate input files (<a href="#id51"><span class="problematic" id="id52">*</span></a>.com file) for different type of
 calculations for GRRM using:</p>
 <p>– non-supported
 – orca
@@ -5369,7 +5023,7 @@ date: June, 2020 .. Aug, 2020</p>
 <dd><p>other options in GRRM code for calculation types
 e.g:</p>
 <p>Options
-sublink=/home/kumarsonu/bin/<a href="#id166"><span class="problematic" id="id167">link_excode_allv3.1_</span></a>.py
+sublink=/home/kumarsonu/bin/<a href="#id149"><span class="problematic" id="id150">link_excode_allv3.1_</span></a>.py
 Add Interaction
 Fragm.1=56,57,58,1
 Fragm.2=59-62
@@ -5478,7 +5132,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_all_atomic_positions_from_EQ_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm.html#grrm.get_all_atomic_positions_from_EQ_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id54"><span class="problematic" id="id55">*</span></a>_EQ_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id53"><span class="problematic" id="id54">*</span></a>_EQ_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5502,7 +5156,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id168"><span class="problematic" id="id169">all_</span></a>’+’.xyz’</p>
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id151"><span class="problematic" id="id152">all_</span></a>’+’.xyz’</p>
 </dd>
 </dl>
 </p>
@@ -5516,13 +5170,13 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
-<dd><p>get atomic positiions and atomic labels from  <a href="#id56"><span class="problematic" id="id57">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id55"><span class="problematic" id="id56">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id58"><span class="problematic" id="id59">*</span></a>_EQ_list.log file of all EQ structures</p>
+<dd><p>get Energy from <a href="#id57"><span class="problematic" id="id58">*</span></a>_EQ_list.log file of all EQ structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5550,7 +5204,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_ITR_adv.html#grrm.get_all_atomic_positions_from_ITR_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id60"><span class="problematic" id="id61">*</span></a>_ITR_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id59"><span class="problematic" id="id60">*</span></a>_ITR_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5574,7 +5228,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id170"><span class="problematic" id="id171">all_</span></a>’+’.xyz’</p>
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id153"><span class="problematic" id="id154">all_</span></a>’+’.xyz’</p>
 </dd>
 </dl>
 </p>
@@ -5589,13 +5243,13 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_ITR_adv.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>not called in case of ITR list.log ……….</p>
-<p>get atomic positiions and atomic labels from  <a href="#id62"><span class="problematic" id="id63">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<p>get atomic positiions and atomic labels from  <a href="#id61"><span class="problematic" id="id62">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_ITR_adv.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id64"><span class="problematic" id="id65">*</span></a>_ITR_list.log file of all TS structures</p>
+<dd><p>get Energy from <a href="#id63"><span class="problematic" id="id64">*</span></a>_ITR_list.log file of all TS structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5623,7 +5277,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_all_atomic_positions_from_PT_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_PT_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_PT.html#grrm.get_all_atomic_positions_from_PT_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_all_atomic_positions_from_PT_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id66"><span class="problematic" id="id67">*</span></a>_PT_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id65"><span class="problematic" id="id66">*</span></a>_PT_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5647,7 +5301,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id172"><span class="problematic" id="id173">all_</span></a>’+’.xyz’</p>
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id155"><span class="problematic" id="id156">all_</span></a>’+’.xyz’</p>
 </dd>
 </dl>
 </p>
@@ -5662,13 +5316,13 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_PT.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>not called in case of PT list.log ……….</p>
-<p>get atomic positiions and atomic labels from  <a href="#id68"><span class="problematic" id="id69">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<p>get atomic positiions and atomic labels from  <a href="#id67"><span class="problematic" id="id68">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_PT.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id70"><span class="problematic" id="id71">*</span></a>_PT_list.log file of all PT structures</p>
+<dd><p>get Energy from <a href="#id69"><span class="problematic" id="id70">*</span></a>_PT_list.log file of all PT structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5695,7 +5349,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_RxnMap6.html#grrm.get_all_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_atomic_positions" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id72"><span class="problematic" id="id73">*</span></a>_TS_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id71"><span class="problematic" id="id72">*</span></a>_TS_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5716,7 +5370,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_RxnMap6.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>not called in case of TS list.log ……….</p>
-<p>get atomic positiions and atomic labels from  <a href="#id74"><span class="problematic" id="id75">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<p>get atomic positiions and atomic labels from  <a href="#id73"><span class="problematic" id="id74">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5730,7 +5384,7 @@ multiplicity: spin multiplicity (2S+1)</p>
 <div><p>dictionary of TS and connections: {‘TS’: TS_list, ‘Connection’: connection}</p>
 </div></blockquote>
 <p>e.g:</p>
-<p>search the following is <a href="#id76"><span class="problematic" id="id77">*</span></a>TS_list.log file:</p>
+<p>search the following is <a href="#id75"><span class="problematic" id="id76">*</span></a>TS_list.log file:</p>
 <p># Geometry of TS 0, SYMMETRY = C1
 CONNECTION : 4 - 5</p>
 </dd></dl>
@@ -5738,7 +5392,7 @@ CONNECTION : 4 - 5</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_RxnMap6.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id78"><span class="problematic" id="id79">*</span></a>_TS_list.log file of all TS structures</p>
+<dd><p>get Energy from <a href="#id77"><span class="problematic" id="id78">*</span></a>_TS_list.log file of all TS structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5797,7 +5451,7 @@ list: connection</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_all_atomic_positions_from_TS_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_TS_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_TS.html#grrm.get_all_atomic_positions_from_TS_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_all_atomic_positions_from_TS_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id80"><span class="problematic" id="id81">*</span></a>_TS_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id79"><span class="problematic" id="id80">*</span></a>_TS_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5821,7 +5475,7 @@ list: connection</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id174"><span class="problematic" id="id175">all_</span></a>’+’.xyz’</p>
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id157"><span class="problematic" id="id158">all_</span></a>’+’.xyz’</p>
 </dd>
 </dl>
 </p>
@@ -5836,13 +5490,13 @@ list: connection</p>
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_TS.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
 <dd><p>not called in case of TS list.log ……….</p>
-<p>get atomic positiions and atomic labels from  <a href="#id82"><span class="problematic" id="id83">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<p>get atomic positiions and atomic labels from  <a href="#id81"><span class="problematic" id="id82">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_TS.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id84"><span class="problematic" id="id85">*</span></a>_TS_list.log file of all TS structures</p>
+<dd><p>get Energy from <a href="#id83"><span class="problematic" id="id84">*</span></a>_TS_list.log file of all TS structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5870,7 +5524,7 @@ list: connection</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_all_atomic_positions_from_EQ_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_init.html#grrm.get_all_atomic_positions_from_EQ_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id86"><span class="problematic" id="id87">*</span></a>_EQ_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id85"><span class="problematic" id="id86">*</span></a>_EQ_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5890,13 +5544,13 @@ list: connection</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_init.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
-<dd><p>get atomic positiions and atomic labels from  <a href="#id88"><span class="problematic" id="id89">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id87"><span class="problematic" id="id88">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/output_grrm_init.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id90"><span class="problematic" id="id91">*</span></a>_EQ_list.log file of all EQ structures</p>
+<dd><p>get Energy from <a href="#id89"><span class="problematic" id="id90">*</span></a>_EQ_list.log file of all EQ structures</p>
 </dd></dl>
 
 <dl class="py method">
@@ -6001,7 +5655,7 @@ threshold_unwanted:  same as threshold, but atoms with these distances or more</
 <blockquote>
 <div><p>are needed in the final xyz str</p>
 </div></blockquote>
-<p><a href="#id92"><span class="problematic" id="id93">**</span></a><a href="#id94"><span class="problematic" id="id95">*</span></a>kwarg: other keyword arguments</p>
+<p><a href="#id91"><span class="problematic" id="id92">**</span></a><a href="#id93"><span class="problematic" id="id94">*</span></a>kwarg: other keyword arguments</p>
 </div></blockquote>
 <blockquote>
 <div><p>only xyz files with specific constrains</p>
@@ -6095,7 +5749,7 @@ threshold_unwanted:  same as threshold, but atoms with these distances or more</
 <blockquote>
 <div><p>are needed in the final xyz str</p>
 </div></blockquote>
-<p><a href="#id96"><span class="problematic" id="id97">**</span></a><a href="#id98"><span class="problematic" id="id99">*</span></a>kwarg: other keyword arguments</p>
+<p><a href="#id95"><span class="problematic" id="id96">**</span></a><a href="#id97"><span class="problematic" id="id98">*</span></a>kwarg: other keyword arguments</p>
 </div></blockquote>
 <blockquote>
 <div><p>only xyz files with specific constrains</p>
@@ -6128,7 +5782,7 @@ str: loc, e.g. ‘xyz_TS’</p>
 <blockquote>
 <div><p>move all files with file_ext to loc</p>
 </div></blockquote>
-<p>mv filenames = <a href="#id100"><span class="problematic" id="id101">*</span></a>xyz to another location (loc);</p>
+<p>mv filenames = <a href="#id99"><span class="problematic" id="id100">*</span></a>xyz to another location (loc);</p>
 </dd></dl>
 
 <span class="target" id="module-esta.grrmBag.write_xyz"></span><dl class="py function">
@@ -6157,7 +5811,7 @@ comment: (optional) logical (True/False) for adding commnet in commnet line of t
 </div></blockquote>
 <blockquote>
 <div><dl class="simple">
-<dt><cite>outfile</cite>: write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id176"><span class="problematic" id="id177">all_</span></a>’+’.xyz’</p>
+<dt><cite>outfile</cite>: write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id159"><span class="problematic" id="id160">all_</span></a>’+’.xyz’</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -6172,7 +5826,7 @@ comment: (optional) logical (True/False) for adding commnet in commnet line of t
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_all_atomic_positions_from_EQ_list">
 <span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/x.html#grrm.get_all_atomic_positions_from_EQ_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.x.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id102"><span class="problematic" id="id103">*</span></a>_EQ_list.log” file of GRRM17</p>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id101"><span class="problematic" id="id102">*</span></a>_EQ_list.log” file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
@@ -6192,13 +5846,13 @@ comment: (optional) logical (True/False) for adding commnet in commnet line of t
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_atomic_positions">
 <span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/x.html#grrm.get_atomic_positions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.x.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
-<dd><p>get atomic positiions and atomic labels from  <a href="#id104"><span class="problematic" id="id105">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id103"><span class="problematic" id="id104">*</span></a>_P[0-nproc].log  file of GRRM17</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_energy">
 <span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/grrmBag/x.html#grrm.get_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.grrmBag.x.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>get Energy from <a href="#id106"><span class="problematic" id="id107">*</span></a>_EQ_list.log file of all EQ structures</p>
+<dd><p>get Energy from <a href="#id105"><span class="problematic" id="id106">*</span></a>_EQ_list.log file of all EQ structures</p>
 </dd></dl>
 
 <dl class="py method">

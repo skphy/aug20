@@ -180,109 +180,58 @@
 <span id="esta-general-aadhaar-module"></span><h2>esta.general.aadhaar module<a class="headerlink" href="#module-esta.general.aadhaar" title="Permalink to this headline">¶</a></h2>
 <p>aadhaar class is a base class to read/write and process information
 related to atoms/molecules information such as atoms coord, atom labels,
-and types, and so on ..</p>
-<section id="it-reads">
-<h3>It reads<a class="headerlink" href="#it-reads" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>xyz file</p></li>
-<li><p>poscar file ….not yet completely done .. rather can be done using vaspBag crystal_latticee class</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="it-writes">
-<h3>It writes<a class="headerlink" href="#it-writes" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><ul class="simple">
-<li><p>poscar file from cell parameters and xyz file data</p></li>
-<li><p>xyz file/s</p></li>
-<li><p>xyz file with frozen and notfrozen atoms</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="more-to-add-sk">
-<h3>more to add …….sk!!<a class="headerlink" href="#more-to-add-sk" title="Permalink to this headline">¶</a></h3>
+and types, and so on!!</p>
+<p>It reads xyz file or poscar file (not yet completely done .. rather can
+be done using vaspBag crystal_latticee class</p>
+<p>It writes poscar file from cell parameters and xyz file data xyz file/s
+or xyz file with frozen and notfrozen atoms</p>
+<p>__author = ‘sk’
+__email  = <a class="reference external" href="mailto:'sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">‘sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>’
+__date   = ‘April 2017’
+__update = ‘1st August 2020, sk’</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.aadhaar.</span></span><span class="sig-name descname"><span class="pre">Aadhaar</span></span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>aadhaar class for structure related information</p>
-<p>** for more info for Class docstring, see the link:**
-.. _link https://numpydoc.readthedocs.io/en/latest/format.html
-…</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.exposure">
-<span class="sig-name descname"><span class="pre">exposure</span></span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.exposure" title="Permalink to this definition">¶</a></dt>
-<dd><p>Exposure in seconds.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.colorspace">
-<span class="sig-name descname"><span class="pre">colorspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rgb'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.colorspace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Represent the photo in the given colorspace.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.gamma">
-<span class="sig-name descname"><span class="pre">gamma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.gamma" title="Permalink to this definition">¶</a></dt>
-<dd><p>Change the photo’s gamma exposure.</p>
-</dd></dl>
-
+<p>aadhaar class for structure related information handling.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_all_xyz_in_a_file">
 <span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_all_xyz_in_a_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id4"><span class="problematic" id="id5">all_</span></a>’+’.xyz’</p>
-</dd>
-</dl>
-</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>outfile</cite></p>
-</dd>
-</dl>
+<dd><p>create single XYZ file for all xyz strcutures given the  atomic positions and atomic labels.
+Note that the similar atoms (identical symbols) are grouped together.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_poscar">
 <span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell_parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_poscar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_poscar" title="Permalink to this definition">¶</a></dt>
-<dd><p>write cell_parameters and atomic postions, atom labels etc in
-poscar file</p>
+<dd><p>create POSCAR file given the cell_parameters, atomic postions, and atom labels.
+Optionally the name of output POSCAR can be provided. When dealing with mutliple
+POSCAR file, better to provide the name of the output POSCAR file.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_file">
 <span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>name_outfile</cite></p>
-</dd>
-</dl>
+<dd><p>create XYZ file given the  atomic positions and atomic labels.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_frozen">
 <span class="sig-name descname"><span class="pre">get_xyz_frozen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frozen_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_frozan_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_frozen"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_frozen" title="Permalink to this definition">¶</a></dt>
 <dd><p>get xyz data with frozan and not frozen atoms in the output file</p>
-<blockquote>
-<div><p>frozen_tuple: tuple containg fixed atomic_positins, atomic_symbols, and atom index
-not_frozen_tuple: tuple containg not fixed atomic_positins, atomic_symbols, and atom index
-name_outfile: optional, name of the output file</p>
-</div></blockquote>
-<dl class="simple">
-<dt>output:</dt><dd><p>create ‘xyz_FROZEN’ type file containing information of frozen and not frozen atoms etc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frozen_tuple</strong> (<em>tuple</em>) – tuple containg fixed atomic_positins, atomic_symbols, and atom index</p></li>
+<li><p><strong>not_frozen_tuple</strong> (<em>tuple</em>) – tuple containg not fixed atomic_positins, atomic_symbols, and atom index</p></li>
+<li><p><strong>name_outfile</strong> (<em>str</em><em>, </em><em>optional</em>) – name of the output file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>name of xyz_frozen_file</strong> – create ‘xyz_FROZEN’ type file containing information of frozen and not frozen atoms etc</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
@@ -290,16 +239,8 @@ name_outfile: optional, name of the output file</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar.get_xyz_grouped">
 <span class="sig-name descname"><span class="pre">get_xyz_grouped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar.html#Aadhaar.get_xyz_grouped"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar.Aadhaar.get_xyz_grouped" title="Permalink to this definition">¶</a></dt>
-<dd><p>get xyz file by reading the atomic positions and atomic labels: use method</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><cite>name_outfile</cite></p>
-</dd>
-</dl>
-<p>NOTE: similar atoms are grouped together</p>
+<dd><p>create XYZ file given the  atomic positions and atomic labels.
+Note that the similar atoms (identical symbols) are grouped together.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -321,7 +262,6 @@ name_outfile: optional, name of the output file</p>
 
 </dd></dl>
 
-</section>
 </section>
 <section id="module-esta.general.add_const_to_dict">
 <span id="esta-general-add-const-to-dict-module"></span><h2>esta.general.add_const_to_dict module<a class="headerlink" href="#module-esta.general.add_const_to_dict" title="Permalink to this headline">¶</a></h2>
@@ -1570,14 +1510,13 @@ email = <a class="reference external" href="mailto:'sonukumar&#46;physics&#37;&#
 </section>
 <section id="module-esta.general.thermo">
 <span id="esta-general-thermo-module"></span><h2>esta.general.thermo module<a class="headerlink" href="#module-esta.general.thermo" title="Permalink to this headline">¶</a></h2>
-<p>this is thermo class for calculating the
-energy contribution coming from the translational, rotational , vibrational
-and electronic degrees of freedom towards entropy, internal energy, and
-specific heat</p>
-<p>In Nutshell: need three components
-1) enthalpy component H = E + PV
-2) entropy components  S
-3) free energy components  G = H -TS = E + PV - TS</p>
+<p>this is thermo class for calculating the energy contribution coming from
+the translational, rotational , vibrational and electronic degrees of freedom
+towards entropy, internal energy, andspecific heat</p>
+<p>In Nutshell: we need three components</p>
+<p>enthalpy component H = E + PV</p>
+<p>entropy components  S</p>
+<p>free energy components  G = H -TS = E + PV - TS</p>
 <p>Model under which the thermodynamical quantities can be calculed:</p>
 <ol class="arabic simple">
 <li><p>Ideal gas approximation</p></li>
@@ -1585,19 +1524,14 @@ specific heat</p>
 <li><p>Hindered rotor and vibrator</p></li>
 <li><p>crystalline materials case</p></li>
 </ol>
-<section id="note">
-<h3>NOTE:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p>for thery:</p>
+<p class="rubric">Notes</p>
+<p>For More information related to theory, see the following:</p>
 <p>see gaussian thermo pdf file,</p>
 <p>or chapter 10: essential of compuational chemisty,</p>
 <p>or html file in the present folder</p>
 <p>or ‘A Note on Thermochemistry’ by openmopac manual</p>
 <p>or Introduction to computational chemistry by Jensen chapter 14.5</p>
-</div></blockquote>
-<p>author: sk
-email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
-date: oct 2020</p>
+<p>author: sk, email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoDyn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoDyn" title="Permalink to this definition">¶</a></dt>
@@ -1605,8 +1539,8 @@ date: oct 2020</p>
 <p>thermodyn class to find energies (eV or other units) for
 entropy, internal energy, and specific heat with respect to
 translational, rotational, vibrational, and electronic degrees of freedom</p>
-<p>Note: all energies are in eV  or SI units</p>
-<p>for thery: see gaussian thermo pdf file, or chapter 10: essential of compuational
+<p>Note theat all energies are in eV  or SI units</p>
+<p>for theory: see gaussian thermo pdf file, or chapter 10: essential of compuational
 chemisty, or html file in the present folder</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn.get_E_vib">
@@ -1626,10 +1560,9 @@ and 3N−5 degrees of freedom for linear molecules (where N is the number of ato
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn.get_moment_inertia">
 <span class="sig-name descname"><span class="pre">get_moment_inertia</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoDyn.get_moment_inertia"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoDyn.get_moment_inertia" title="Permalink to this definition">¶</a></dt>
 <dd><p>get moment of inertia of the molecule or other possible system</p>
-<p>formula: see A note on thermochemistry or else ………………</p>
-<ul class="simple">
-<li><p>from A note on thermochemisty:</p></li>
-</ul>
+<p>formula: see A note on thermochemistry or else where!!</p>
+<p class="rubric">Notes</p>
+<p>Taken from A note on thermochemisty:</p>
 <p>IA = Σimi(RAi)2, where i runs over all atoms in the system, mi
 is the mass of the atom in amu, and RAi is the distance from the
 axis of rotation, A, to atom i in Ångstroms.</p>
@@ -1655,17 +1588,22 @@ The eigenvectors associated with the eigenvalues are the axes of rotation, A, B,
 <p>Rotational constants in cm-1:  A = hN1016/(8π2c)/(amu Ångstrom2)
 A (in MHz) = 5.053791x105/(amu Ångstrom2)
 A (in cm-1) =  5.053791x105/c(amu Ångstrom2)  = 16.85763/(amu Ångstrom2)</p>
-<blockquote>
-<div><p>array: cartesian coordinates of rank 2;  [:,:]
-list: atomic symbols (need to calculate the Molecular mass or total mass)</p>
-</div></blockquote>
-<blockquote>
-<div><p>vector:  moment of inertia about axis of rotation A, B, and C;
-array: array of rank2, principle axis of rotations, A, B, and C</p>
-<blockquote>
-<div><p>about which moment of inertia is calculated</p>
-</div></blockquote>
-</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coordinates</strong> (<em>array</em>) – cartesian coordinates of rank 2;  [:,:]</p></li>
+<li><p><strong>symbols</strong> (<em>list</em>) – list of atomic symbols (need to calculate the Molecular mass or total mass)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>vector</strong> (<em>array</em>) – moment of inertia about axis of rotation A, B, and C;</p></li>
+<li><p><strong>principle axis</strong> (<em>array</em>) – array of rank2, principle axis of rotations, A, B, and C
+about which moment of inertia is calculated</p></li>
+</ul>
+</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -1682,14 +1620,6 @@ array: array of rank2, principle axis of rotations, A, B, and C</p>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>Harmonic thermodynamics</p>
-<blockquote>
-<div><p>E_dft: float
-vib_freq: array
-temp: float</p>
-</div></blockquote>
-<blockquote>
-<div><p>see respecitve methods in the class</p>
-</div></blockquote>
 <p>Harmonic limit: taken from ASE website:
 The conversion of electronic structure calculation information into
 thermodynamic properties is less established for adsorbates. However,
@@ -1697,21 +1627,21 @@ the simplest approach often taken is to treat all 3N
 degrees of freedom of the adsorbate harmonically since the adsorbate often
 has no real translational or rotational degrees of freedom.</p>
 <dl class="simple">
-<dt>U(T) = <a href="#id6"><span class="problematic" id="id7">E_</span></a>   ext{elec} + <a href="#id8"><span class="problematic" id="id9">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
+<dt>U(T) = <a href="#id3"><span class="problematic" id="id4">E_</span></a>   ext{elec} + <a href="#id5"><span class="problematic" id="id6">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id10"><span class="problematic" id="id11">k_</span></a>       ext{B} T} - 1 }</p>
+<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id7"><span class="problematic" id="id8">k_</span></a>       ext{B} T} - 1 }</p>
 <blockquote>
 <div><dl class="simple">
-<dt>S = <a href="#id12"><span class="problematic" id="id13">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
+<dt>S = <a href="#id9"><span class="problematic" id="id10">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{<a href="#id14"><span class="problematic" id="id15">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id16"><span class="problematic" id="id17">k_</span></a>   ext{B}T}-1
+<p>rac{epsilon_i}{<a href="#id11"><span class="problematic" id="id12">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id13"><span class="problematic" id="id14">k_</span></a>   ext{B}T}-1
 ight)} -</p>
 <blockquote>
-<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id18"><span class="problematic" id="id19">k_</span></a>    ext{B}T}</p>
+<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id15"><span class="problematic" id="id16">k_</span></a>    ext{B}T}</p>
 </div></blockquote>
 <p>ight)
 ight]</p>
@@ -1724,44 +1654,38 @@ U(T)=Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_E_vib">
 <span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">set_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_E_vib" title="Permalink to this definition">¶</a></dt>
 <dd><p>find the  in internal energy part due to vibrations from
-0K to a given temperature in eV</p>
-<p>get vibration contribution to internal energy:</p>
-<p>all DOF are considered within the harmonic approximation</p>
-<blockquote>
-<div><p>vib energy contri in eV.</p>
-</div></blockquote>
+0K to a given temperature in eV. All DOF are considered within the harmonic
+approximation</p>
+<p>Output the vibration contribution to internal energy:</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy">
 <span class="sig-name descname"><span class="pre">get_Helmholtz_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_Helmholtz_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
+<dd><p>calculate the Helmholtz free energy</p>
+<p class="rubric">Notes</p>
+<p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
 <p>F(T) = U(T)−TS(T) – Helmholtz free energy</p>
-<p>assuming PV term to be negligible, we have G(T) ~ F(T)</p>
-<p>NOTE: if we assumes that the pV term in H=U+pV is negligible, then the
+<p>assuming PV term to be negligible, we have G(T) equal to F(T)</p>
+<p>If we assumes that the pV term in H=U+pV is negligible, then the
 Helmholtz free energy can be used to approximate the Gibbs free energy, as G=F+pV.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_S_vib">
 <span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-<p>find the entropy due to vibrations for vibrations (3N DOF)
+<dd><p>get vibrational entropy in eV/K (3N DOF)
 given in eV</p>
-<blockquote>
-<div><p>entropy and entropy energy in eV/K  and ev/k, respectively.</p>
-</div></blockquote>
+<p>output is entropy and entropy energy in eV/K  and ev/k, respectively.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic.get_internal_energy">
 <span class="sig-name descname"><span class="pre">get_internal_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoHarmonic.get_internal_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic.get_internal_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>find internal energy, in eV, in the harmonic approximation taking all DOF (3N)
+<dd><p>find internal energy in eV at a given T in the harmonic approximation taking all DOF (3N)
 at a given temperature (K).</p>
+<p class="rubric">Notes</p>
 <p>E(T) = U(T) = Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<blockquote>
-<div><p>internal energy contribution at given T in eV</p>
-</div></blockquote>
 </dd></dl>
 
 <dl class="py method">
@@ -1787,14 +1711,19 @@ at a given temperature (K).</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy">
 <span class="sig-name descname"><span class="pre">get_Gibbs_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_Gibbs_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
+<dd><p>calculate the free energy G at a given temp and pressue</p>
+<p class="rubric">Notes</p>
+<p>(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
+<p>E_DFT is energy from DFT calculation ror some other nonDFT calculations</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_enthalpy">
 <span class="sig-name descname"><span class="pre">get_enthalpy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_enthalpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_enthalpy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there
-H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity at const P)</p>
+<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there</p>
+<p class="rubric">Notes</p>
+<p>H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity
+at const P)</p>
 <p>H(T) = Eelec + EZPE + ∫ C_P dT; integral from 0–&gt;T</p>
 <p>Cp = kB + CV,trans + CV,rot + CV,vib + CV,elec</p>
 <p>∫CV,vib dT = ∑  ϵi/exp ( ϵi/kBT−1) ; for linear mol = 3N-5 and 3N-6 nonlinear vibrations</p>
@@ -1803,11 +1732,9 @@ H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas.get_entropy">
 <span class="sig-name descname"><span class="pre">get_entropy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo.html#ThermoIdealGas.get_entropy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas.get_entropy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate entropy S(T,P) = S(T,P∘) − kB ln P/P∘</p>
-<blockquote>
-<div><p>= S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
-</div></blockquote>
-<p>print(‘Entropy components at T = 298.15 K and P = 101325.0 Pa:’)</p>
+<dd><p>calculate entropy S(T,P) = S(T,P_0) − kB ln P/P_0</p>
+<p class="rubric">Notes</p>
+<p>S =  S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
 <p>1 Pa = 1 N / m2</p>
 </dd></dl>
 
@@ -1821,260 +1748,8 @@ H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat
 </dd></dl>
 
 </section>
-</section>
-<section id="module-esta.general.thermo_for_TS1_eth">
-<span id="esta-general-thermo-for-ts1-eth-module"></span><h2>esta.general.thermo_for_TS1_eth module<a class="headerlink" href="#module-esta.general.thermo_for_TS1_eth" title="Permalink to this headline">¶</a></h2>
-<p>this is thermo class for calculating the
-energy contribution coming from the translational, rotational , vibrational
-and electronic degrees of freedom towards entropy, internal energy, and
-specific heat</p>
-<p>In Nutshell: need three components
-1) enthalpy component H = E + PV
-2) entropy components  S
-3) free energy components  G = H -TS = E + PV - TS</p>
-<p>Model under which the thermodynamical quantities can be calculed:</p>
-<ol class="arabic simple">
-<li><p>Ideal gas approximation</p></li>
-<li><p>Harmonic approx</p></li>
-<li><p>Hindered rotor and vibrator</p></li>
-<li><p>crystalline materials case</p></li>
-</ol>
-<section id="id3">
-<h3>NOTE:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p>for thery:</p>
-<p>see gaussian thermo pdf file,</p>
-<p>or chapter 10: essential of compuational chemisty,</p>
-<p>or html file in the present folder</p>
-<p>or ‘A Note on Thermochemistry’ by openmopac manual</p>
-<p>or Introduction to computational chemistry by Jensen chapter 14.5</p>
-</div></blockquote>
-<p>author: sk
-email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
-date: oct 2020</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>thermodyn class to find energies (eV or other units) for
-entropy, internal energy, and specific heat with respect to
-translational, rotational, vibrational, and electronic degrees of freedom</p>
-<p>Note: all energies are in eV  or SI units</p>
-<p>for thery: see gaussian thermo pdf file, or chapter 10: essential of compuational
-chemisty, or html file in the present folder</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_E_vib">
-<span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_E_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get vibration contribution to internal energy:</p>
-<p>it contains vibtaration heat capacity contains 3N−6 degrees of freedom for nonlinear molecules
-and 3N−5 degrees of freedom for linear molecules (where N is the number of atoms)</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_S_vib">
-<span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_moment_inertia">
-<span class="sig-name descname"><span class="pre">get_moment_inertia</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_moment_inertia"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_moment_inertia" title="Permalink to this definition">¶</a></dt>
-<dd><p>get moment of inertia of the molecule or other possible system</p>
-<p>formula: see A note on thermochemistry or else ………………</p>
-<ul class="simple">
-<li><p>from A note on thermochemisty:</p></li>
-</ul>
-<p>IA = Σimi(RAi)2, where i runs over all atoms in the system, mi
-is the mass of the atom in amu, and RAi is the distance from the
-axis of rotation, A, to atom i in Ångstroms.</p>
-<p>The axes of rotation are calculated as follows:</p>
-<p>First, a 3 by 3 matrix, t,  is constructed, with the elements of t being:</p>
-<p>t1,1 =  Y2 +  Z2 = Σimi(yi2 + zi2)
-t1,2 =  -X.Y = -Σimixiyi
-t2,2 =  X2 +  Z2 = Σimi(xi2 + zi2)
-t1,3 =  -X.Z = -Σimixizi
-t2,3 =  -Y.Z = -Σimiyizi
-t3,3 =  X2 +  Y2 = Σimi(xi2 + yi2)</p>
-<p>where mi is the mass of the atom in amu, and xi, yi,
-and zi, are the Cartesian coordinates of the atoms, in Ångstroms.
-Then t is diagonalized. The resulting eigenvalues, (amu Ångstrom2), are
-divided by N.A2, where N=Avogardo’s number and A = number of Ångstroms in a
-centimeter, to give the moments of inertia in g.cm2.  Because a useful unit
-is 10-40.g.cm2, the moments of inertia are multiplied by 1040 before being printed.
-The eigenvectors associated with the eigenvalues are the axes of rotation, A, B, and C.</p>
-<dl class="simple">
-<dt>Useful conversion factors</dt><dd><p>1 g cm2  = 1.660540x10-40  (amu Ångstrom2)</p>
-</dd>
-</dl>
-<p>Rotational constants in cm-1:  A = hN1016/(8π2c)/(amu Ångstrom2)
-A (in MHz) = 5.053791x105/(amu Ångstrom2)
-A (in cm-1) =  5.053791x105/c(amu Ångstrom2)  = 16.85763/(amu Ångstrom2)</p>
-<blockquote>
-<div><p>array: cartesian coordinates of rank 2;  [:,:]
-list: atomic symbols (need to calculate the Molecular mass or total mass)</p>
-</div></blockquote>
-<blockquote>
-<div><p>vector:  moment of inertia about axis of rotation A, B, and C;
-array: array of rank2, principle axis of rotations, A, B, and C</p>
-<blockquote>
-<div><p>about which moment of inertia is calculated</p>
-</div></blockquote>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoDyn.get_zpe">
-<span class="sig-name descname"><span class="pre">get_zpe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoDyn.get_zpe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoDyn.get_zpe" title="Permalink to this definition">¶</a></dt>
-<dd><p>get quantum mechanical zpe energy in eV</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<blockquote>
-<div><p>Harmonic thermodynamics</p>
-<blockquote>
-<div><p>E_dft: float
-vib_freq: array
-temp: float</p>
-</div></blockquote>
-<blockquote>
-<div><p>see respecitve methods in the class</p>
-</div></blockquote>
-<p>Harmonic limit: taken from ASE website:
-The conversion of electronic structure calculation information into
-thermodynamic properties is less established for adsorbates. However,
-the simplest approach often taken is to treat all 3N
-degrees of freedom of the adsorbate harmonically since the adsorbate often
-has no real translational or rotational degrees of freedom.</p>
-<dl class="simple">
-<dt>U(T) = <a href="#id20"><span class="problematic" id="id21">E_</span></a>   ext{elec} + <a href="#id22"><span class="problematic" id="id23">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id24"><span class="problematic" id="id25">k_</span></a>       ext{B} T} - 1 }</p>
-<blockquote>
-<div><dl class="simple">
-<dt>S = <a href="#id26"><span class="problematic" id="id27">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>rac{epsilon_i}{<a href="#id28"><span class="problematic" id="id29">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id30"><span class="problematic" id="id31">k_</span></a>   ext{B}T}-1
-ight)} -</p>
-<blockquote>
-<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id32"><span class="problematic" id="id33">k_</span></a>    ext{B}T}</p>
-</div></blockquote>
-<p>ight)
-ight]</p>
-<blockquote>
-<div><p>i.e.
-U(T)=Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<p>S=kB ∑iharm DOF[ϵi kBT(e ϵi/kBT−1)−ln(1−e−ϵi/kBT)]</p>
-</div></blockquote>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_E_vib">
-<span class="sig-name descname"><span class="pre">get_E_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_E_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_E_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>find the  in internal energy part due to vibrations from
-0K to a given temperature in eV</p>
-<p>get vibration contribution to internal energy:</p>
-<p>all DOF are considered within the harmonic approximation</p>
-<blockquote>
-<div><p>vib energy contri in eV.</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_Helmholtz_free_energy">
-<span class="sig-name descname"><span class="pre">get_Helmholtz_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_Helmholtz_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_Helmholtz_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be…</p>
-<p>F(T) = U(T)−TS(T) – Helmholtz free energy</p>
-<p>assuming PV term to be negligible, we have G(T) ~ F(T)</p>
-<p>NOTE: if we assumes that the pV term in H=U+pV is negligible, then the
-Helmholtz free energy can be used to approximate the Gibbs free energy, as G=F+pV.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_S_vib">
-<span class="sig-name descname"><span class="pre">get_S_vib</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_S_vib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_S_vib" title="Permalink to this definition">¶</a></dt>
-<dd><p>get S_vib, vibrational entropy in eV/K</p>
-<p>find the entropy due to vibrations for vibrations (3N DOF)
-given in eV</p>
-<blockquote>
-<div><p>entropy and entropy energy in eV/K  and ev/k, respectively.</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_internal_energy">
-<span class="sig-name descname"><span class="pre">get_internal_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_internal_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_internal_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>find internal energy, in eV, in the harmonic approximation taking all DOF (3N)
-at a given temperature (K).</p>
-<p>E(T) = U(T) = Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</p>
-<blockquote>
-<div><p>internal energy contribution at given T in eV</p>
-</div></blockquote>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_zpe">
-<span class="sig-name descname"><span class="pre">get_zpe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHarmonic.get_zpe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_zpe" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the zero-point vibrational energy eV.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoHindredRotVib">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoHindredRotVib"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Hinder vibrational and rotation oscillator thermodynamics</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn" title="esta.general.thermo_for_TS1_eth.ThermoDyn"><code class="xref py py-class docutils literal notranslate"><span class="pre">esta.general.thermo_for_TS1_eth.ThermoDyn</span></code></a></p>
-<p>calculate thermodynamic quantities within the ideal gas approximation</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_Gibbs_free_energy">
-<span class="sig-name descname"><span class="pre">get_Gibbs_free_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_Gibbs_free_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_Gibbs_free_energy" title="Permalink to this definition">¶</a></dt>
-<dd><p>G(T,P ) = H(T) − TS (T,P)  + E_DFT</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_enthalpy">
-<span class="sig-name descname"><span class="pre">get_enthalpy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_enthalpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_enthalpy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there
-H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity at const P)</p>
-<p>H(T) = Eelec + EZPE + ∫ C_P dT; integral from 0–&gt;T</p>
-<p>Cp = kB + CV,trans + CV,rot + CV,vib + CV,elec</p>
-<p>∫CV,vib dT = ∑  ϵi/exp ( ϵi/kBT−1) ; for linear mol = 3N-5 and 3N-6 nonlinear vibrations</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_entropy">
-<span class="sig-name descname"><span class="pre">get_entropy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S_trans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_rot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoIdealGas.get_entropy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_entropy" title="Permalink to this definition">¶</a></dt>
-<dd><p>calculate entropy S(T,P) = S(T,P∘) − kB ln P/P∘</p>
-<blockquote>
-<div><p>= S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</p>
-</div></blockquote>
-<p>print(‘Entropy components at T = 298.15 K and P = 101325.0 Pa:’)</p>
-<p>1 Pa = 1 N / m2</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.general.thermo_for_TS1_eth.ThermoLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo_for_TS1_eth.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="reference internal" href="_modules/esta/general/thermo_for_TS1_eth.html#ThermoLattice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.thermo_for_TS1_eth.ThermoLattice" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Atomic lattice thermodynamics</p>
-</dd></dl>
-
-</section>
+<section id="esta-general-thermo-for-ts1-eth-module">
+<h2>esta.general.thermo_for_TS1_eth module<a class="headerlink" href="#esta-general-thermo-for-ts1-eth-module" title="Permalink to this headline">¶</a></h2>
 </section>
 <section id="module-esta.general.xyz">
 <span id="esta-general-xyz-module"></span><h2>esta.general.xyz module<a class="headerlink" href="#module-esta.general.xyz" title="Permalink to this headline">¶</a></h2>

@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -177,7 +185,7 @@
 <span class="sd">place: QCL, ICReDD, Japan</span>
 <span class="sd">&#39;&#39;&#39;</span>
 
-<div class="viewcode-block" id="struct"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.search_structure2_mod.struct">[docs]</a><span class="k">class</span> <span class="nc">struct</span><span class="p">:</span>
+<div class="viewcode-block" id="struct"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.search_structure2_mod.struct">[docs]</a><span class="k">class</span> <span class="nc">struct</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    struct class for getting the possible strs with some contraints on </span>
 <span class="sd">    atoms locations </span>
@@ -186,7 +194,7 @@
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;inside [ struct ] class&#39;</span><span class="p">)</span>
         
-<div class="viewcode-block" id="struct.read_xyz"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.search_structure2_mod.struct.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile</span><span class="p">):</span>
+<div class="viewcode-block" id="struct.read_xyz"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.search_structure2_mod.struct.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        input: </span>
 <span class="sd">        ------</span>
@@ -232,7 +240,7 @@
                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;returning nothing!!&#39;</span><span class="p">)</span>
                 <span class="k">return</span> <span class="kc">None</span></div>
             
-<div class="viewcode-block" id="struct.get_str"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.search_structure2_mod.struct.get_str">[docs]</a>    <span class="k">def</span> <span class="nf">get_str</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile_obj</span><span class="p">,</span> <span class="n">xyz_file</span>
+<div class="viewcode-block" id="struct.get_str"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.search_structure2_mod.struct.get_str">[docs]</a>    <span class="k">def</span> <span class="nf">get_str</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfile_obj</span><span class="p">,</span> <span class="n">xyz_file</span>
                     <span class="p">,</span> <span class="n">atoms_list</span>
                     <span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="kc">None</span>
                     <span class="p">,</span> <span class="n">atoms_list_unwanted</span> <span class="o">=</span> <span class="kc">None</span>
@@ -407,7 +415,7 @@
 
             
             
-<div class="viewcode-block" id="strInfo"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.search_structure2_mod.strInfo">[docs]</a><span class="k">class</span> <span class="nc">strInfo</span><span class="p">:</span>
+<div class="viewcode-block" id="strInfo"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.search_structure2_mod.strInfo">[docs]</a><span class="k">class</span> <span class="nc">strInfo</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    class to just print the str information etc ; it takes as input information of</span>
 <span class="sd">    strs from struct class.</span>
@@ -417,7 +425,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside [ strInfo ] class!!&#39;</span><span class="p">)</span>
 
 <span class="c1">#     def get_str_info(self, filenames, atoms_info, dist_criteria):</span>
-<div class="viewcode-block" id="strInfo.get_str_info"><a class="viewcode-back" href="../../../esta.grrmBag.html#esta.grrmBag.search_structure2_mod.strInfo.get_str_info">[docs]</a>    <span class="k">def</span> <span class="nf">get_str_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filenames</span><span class="p">,</span> <span class="n">atoms_info</span><span class="p">,</span> <span class="n">dist_criteria</span>                                    <span class="p">,</span> <span class="n">atoms_info_unwanted</span> <span class="o">=</span> <span class="kc">None</span>                                    <span class="p">,</span> <span class="n">dist_criteria_unwanted</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="strInfo.get_str_info"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.search_structure2_mod.strInfo.get_str_info">[docs]</a>    <span class="k">def</span> <span class="nf">get_str_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filenames</span><span class="p">,</span> <span class="n">atoms_info</span><span class="p">,</span> <span class="n">dist_criteria</span>                                    <span class="p">,</span> <span class="n">atoms_info_unwanted</span> <span class="o">=</span> <span class="kc">None</span>                                    <span class="p">,</span> <span class="n">dist_criteria_unwanted</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get information of all possible atomic strs with </span>
 <span class="sd">        input constraints</span>

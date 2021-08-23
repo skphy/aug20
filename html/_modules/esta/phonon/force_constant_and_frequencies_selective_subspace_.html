@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -183,7 +191,7 @@
 <span class="sd">&#39;&#39;&#39;</span>
 
 <span class="c1"># def get_forces_dict(natoms):</span>
-<div class="viewcode-block" id="get_forces_dict"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_dict">[docs]</a><span class="k">def</span> <span class="nf">get_forces_dict</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forces_dict"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_dict">[docs]</a><span class="k">def</span> <span class="nf">get_forces_dict</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    get forces fron qe output files with + and - displacements and</span>
 <span class="sd">    store them in dictionary with indices indication atoms moving index,</span>
@@ -217,7 +225,7 @@
 
 
 
-<div class="viewcode-block" id="get_forces_dict_parta"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_dict_parta">[docs]</a><span class="k">def</span> <span class="nf">get_forces_dict_parta</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forces_dict_parta"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_dict_parta">[docs]</a><span class="k">def</span> <span class="nf">get_forces_dict_parta</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    get forces fron qe output files with + and - displacements and</span>
 <span class="sd">    store them in dictionary with indices indication atoms moving index,</span>
@@ -298,7 +306,7 @@
     <span class="k">return</span> <span class="n">forces_dict</span></div>
 
 
-<div class="viewcode-block" id="get_idatm_iddir_iddispl"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_idatm_iddir_iddispl">[docs]</a><span class="k">def</span> <span class="nf">get_idatm_iddir_iddispl</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
+<div class="viewcode-block" id="get_idatm_iddir_iddispl"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_idatm_iddir_iddispl">[docs]</a><span class="k">def</span> <span class="nf">get_idatm_iddir_iddispl</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    get a list of &#39;idatm-iddir-iddispl&#39;</span>
 <span class="sd">        idatm: atom id</span>
@@ -329,7 +337,7 @@
 <span class="c1"># print (atom_direction_shift)</span>
 
 <span class="c1"># def get_forces_minus(natoms, forces_dict, atom_direction_shift):</span>
-<div class="viewcode-block" id="get_forces_minus"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_minus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_minus</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forces_minus"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_minus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_minus</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    extract forces from forces_dict for minus (id=0) displacement</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -366,7 +374,7 @@
 
 
 <span class="c1"># def get_forces_plus(natoms, forces_dict, atom_direction_shift):</span>
-<div class="viewcode-block" id="get_forces_plus"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_plus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_plus</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forces_plus"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_plus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_plus</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    extract forces from forces_dict for plus (id=1) displacement</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -391,7 +399,7 @@
 <span class="c1"># force_c1 = get_forces_plus(natoms, forces_dict, atom_direction_shift)</span>
 <span class="c1"># print(force_c1, np.shape(force_c1))</span>
 
-<div class="viewcode-block" id="get_forces_central"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_central">[docs]</a><span class="k">def</span> <span class="nf">get_forces_central</span><span class="p">(</span><span class="n">force_c0</span><span class="p">,</span> <span class="n">force_c1</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forces_central"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forces_central">[docs]</a><span class="k">def</span> <span class="nf">get_forces_central</span><span class="p">(</span><span class="n">force_c0</span><span class="p">,</span> <span class="n">force_c1</span><span class="p">):</span>
     <span class="n">force_central</span> <span class="o">=</span> <span class="p">(</span><span class="n">force_c1</span><span class="o">-</span><span class="n">force_c0</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
 <span class="c1">#     force_central = (force_c1+force_c0)/2.</span>
     <span class="k">return</span> <span class="n">force_central</span></div>
@@ -399,7 +407,7 @@
 <span class="c1"># print(force_central)</span>
 <span class="c1"># print(&#39;**force_c0 (- displ), force_c1 (+ displ), and force_central are force constant matrices**&#39;)</span>
 
-<div class="viewcode-block" id="get_forceconstant_matrix"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forceconstant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_forceconstant_matrix</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">deltax</span><span class="p">,</span> <span class="n">sign_deltax</span><span class="o">=</span><span class="s1">&#39;plus&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="get_forceconstant_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_forceconstant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_forceconstant_matrix</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">deltax</span><span class="p">,</span> <span class="n">sign_deltax</span><span class="o">=</span><span class="s1">&#39;plus&#39;</span><span class="p">):</span>
 <span class="c1"># def get_forceconstant_matrix(atommove, forces, deltax=0.04, sign_deltax=&#39;plus&#39;):</span>
 <span class="c1"># def get_forceconstant_matrix(natoms, forces, deltax=0.04, sign_deltax=&#39;plus&#39;):</span>
     
@@ -461,7 +469,7 @@
 
 
 <span class="c1"># def get_symmetrized_force_constant_matrix(fcMatrx, natoms):</span>
-<div class="viewcode-block" id="get_symmetrized_force_constant_matrix"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_symmetrized_force_constant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_symmetrized_force_constant_matrix</span><span class="p">(</span><span class="n">fcMatrx</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>
+<div class="viewcode-block" id="get_symmetrized_force_constant_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_symmetrized_force_constant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_symmetrized_force_constant_matrix</span><span class="p">(</span><span class="n">fcMatrx</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    symmetrize force constant matrix fc(iat, ia, jat, ja)</span>
 <span class="sd">    </span>
@@ -487,7 +495,7 @@
 
 
 <span class="c1"># def get_asr(fcMatrix, natoms):</span>
-<div class="viewcode-block" id="get_asr"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_asr">[docs]</a><span class="k">def</span> <span class="nf">get_asr</span><span class="p">(</span><span class="n">fcMatrix</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>   
+<div class="viewcode-block" id="get_asr"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_asr">[docs]</a><span class="k">def</span> <span class="nf">get_asr</span><span class="p">(</span><span class="n">fcMatrix</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>   
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    apply accoustic sum rule on the force constant matrix</span>
 <span class="sd">    </span>
@@ -515,7 +523,7 @@
                 <span class="n">fcMatrix</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span><span class="n">ia</span><span class="p">,</span><span class="n">iat</span><span class="p">,</span><span class="n">ja</span><span class="p">]</span> <span class="o">=</span> <span class="n">fcMatrix</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span><span class="n">ia</span><span class="p">,</span><span class="n">iat</span><span class="p">,</span><span class="n">ja</span><span class="p">]</span> <span class="o">-</span> <span class="n">fc_sum</span>
     <span class="k">return</span> <span class="n">fcMatrix</span></div>
 
-<div class="viewcode-block" id="write_forces"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.write_forces">[docs]</a><span class="k">def</span> <span class="nf">write_forces</span><span class="p">(</span><span class="n">force_row</span><span class="p">,</span> <span class="n">ldisp</span><span class="p">):</span>
+<div class="viewcode-block" id="write_forces"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.write_forces">[docs]</a><span class="k">def</span> <span class="nf">write_forces</span><span class="p">(</span><span class="n">force_row</span><span class="p">,</span> <span class="n">ldisp</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    may be you need to add ... atoms parameter in the call ..</span>
 <span class="sd">    </span>
@@ -551,7 +559,7 @@
 <span class="c1"># #### note sure write_forces(force_central, ldisp=&#39;central&#39;) </span>
 
 
-<div class="viewcode-block" id="get_sqrt_mass_array"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_sqrt_mass_array">[docs]</a><span class="k">def</span> <span class="nf">get_sqrt_mass_array</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+<div class="viewcode-block" id="get_sqrt_mass_array"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_sqrt_mass_array">[docs]</a><span class="k">def</span> <span class="nf">get_sqrt_mass_array</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    for given atomic symbols, return correspoinding masses in amu</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -570,7 +578,7 @@
 
 <span class="c1">#def get_dynamical_matrix(natoms, label, forceconstant):</span>
 <span class="c1"># def get_dynamical_matrix(natoms, sqrt_mass_array, forceconstant):</span>
-<div class="viewcode-block" id="get_dynamical_matrix"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_dynamical_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_dynamical_matrix</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">sqrt_mass_array</span><span class="p">,</span> <span class="n">forceconstant</span><span class="p">):</span>        
+<div class="viewcode-block" id="get_dynamical_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_dynamical_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_dynamical_matrix</span><span class="p">(</span><span class="n">atommove</span><span class="p">,</span> <span class="n">sqrt_mass_array</span><span class="p">,</span> <span class="n">forceconstant</span><span class="p">):</span>        
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    getting dynamical matrix from force constant matrix at q=0 point</span>
 
@@ -623,7 +631,7 @@
 <span class="c1"># dynmat = get_dynamical_matrix(natoms, fc1)</span>
 
 <span class="c1"># def reshape_dyn(dynmatrix, natoms):</span>
-<div class="viewcode-block" id="reshape_dyn"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.reshape_dyn">[docs]</a><span class="k">def</span> <span class="nf">reshape_dyn</span><span class="p">(</span><span class="n">dynmatrix</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>
+<div class="viewcode-block" id="reshape_dyn"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.reshape_dyn">[docs]</a><span class="k">def</span> <span class="nf">reshape_dyn</span><span class="p">(</span><span class="n">dynmatrix</span><span class="p">,</span> <span class="n">atommove</span><span class="p">):</span>
 
     <span class="c1">#-----------------------------------------</span>
     <span class="n">atommove_list</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atommove</span><span class="p">]</span>
@@ -646,7 +654,7 @@
     <span class="k">return</span> <span class="n">dyn</span></div>
 <span class="c1"># dyn = reshape_dyn(dynmat, natoms)</span>
 
-<div class="viewcode-block" id="get_eigen"><a class="viewcode-back" href="../../../esta.phonon.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_eigen">[docs]</a><span class="k">def</span> <span class="nf">get_eigen</span><span class="p">(</span><span class="n">dynamatical_matrix</span><span class="p">):</span>
+<div class="viewcode-block" id="get_eigen"><a class="viewcode-back" href="../../../file4.html#esta.phonon.force_constant_and_frequencies_selective_subspace_.get_eigen">[docs]</a><span class="k">def</span> <span class="nf">get_eigen</span><span class="p">(</span><span class="n">dynamatical_matrix</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    dynamical matrix is hermitian matrix .. try taking it Hermitian matrix</span>
 <span class="sd">    instead of general matrix</span>

@@ -95,6 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">Details of EStA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../file3.html">ML algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 </ul>
 
             
@@ -193,7 +201,7 @@
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<div class="viewcode-block" id="CrystalLattice"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice">[docs]</a><span class="k">class</span> <span class="nc">CrystalLattice</span><span class="p">:</span>
+<div class="viewcode-block" id="CrystalLattice"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice">[docs]</a><span class="k">class</span> <span class="nc">CrystalLattice</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Crystal lattice class to define lattice parameters and basis</span>
 <span class="sd">    crystal = lattice + basis (atoms or molecules )</span>
@@ -233,7 +241,7 @@
         <span class="c1">#self.no_of_types = 0 #&lt;--- this is new variable --add to return in method call</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">False</span>
         
-<div class="viewcode-block" id="CrystalLattice.get_poscar"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_poscar"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get poscar file variables:</span>
 <span class="sd">        </span>
@@ -431,7 +439,7 @@
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natm_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span></div>
 
         
-<div class="viewcode-block" id="CrystalLattice.reciprocal_lattice"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.reciprocal_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">reciprocal_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.reciprocal_lattice"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.reciprocal_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">reciprocal_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        method to calculate the reciprocal lattice vectors        </span>
 
@@ -452,7 +460,7 @@
         <span class="k">return</span> <span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">b3</span></div>
 
     
-<div class="viewcode-block" id="CrystalLattice.get_all_atoms_labels"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_all_atoms_labels">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atoms_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_all_atoms_labels"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_all_atoms_labels">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atoms_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        by reading POSCAR, find the atomic labels of the atoms and total no of atoms</span>
 <span class="sd">        </span>
@@ -510,7 +518,7 @@
     
     
 <span class="c1">#--------TAKEN FROM read_write.py  from qeBag -------------------------</span>
-<div class="viewcode-block" id="CrystalLattice.get_unique_list"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_unique_list"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
             <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">            get unique elements of list</span>
 
@@ -525,7 +533,7 @@
             <span class="k">return</span> <span class="n">ulist</span></div>
 
         
-<div class="viewcode-block" id="CrystalLattice.get_grouped_list"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_grouped_list"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get same string elements of list grouped together</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -544,7 +552,7 @@
         <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="CrystalLattice.get_neach_type"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_neach_type"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get number of list entries of each type</span>
 
@@ -570,7 +578,7 @@
     
     
     
-<div class="viewcode-block" id="CrystalLattice.get_dispPOSCAR"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_dispPOSCAR">[docs]</a>    <span class="k">def</span> <span class="nf">get_dispPOSCAR</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ldisp</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">disp_atoms_num</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_dispPOSCAR"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_dispPOSCAR">[docs]</a>    <span class="k">def</span> <span class="nf">get_dispPOSCAR</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ldisp</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">disp_atoms_num</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get displaced poscar with selective tag and atomic positions </span>
 <span class="sd">        tagged as T T T or F F F</span>
@@ -696,7 +704,7 @@
         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LV1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span><span class="p">)</span>
     
     <span class="c1">#@property</span>
-<div class="viewcode-block" id="CrystalLattice.get_cell_matrix"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_matrix">[docs]</a>    <span class="k">def</span> <span class="nf">get_cell_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">style_format</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_cell_matrix"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_matrix">[docs]</a>    <span class="k">def</span> <span class="nf">get_cell_matrix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">style_format</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get lattice matrix of three cell/lattice vectors lv1, lv2, and lv3</span>
 <span class="sd">        in c-style format or fortran stype format</span>
