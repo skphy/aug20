@@ -20,6 +20,9 @@ Linear Regression
 A linear regression model just finds a linear relation between descriptors and the output. For more details see the book of Kevin Murphy or some other standard text 
 books on machine learning.
 
+
+More information of these implementations, specifically GPR will be added latter.
+
 References
 ----------
 

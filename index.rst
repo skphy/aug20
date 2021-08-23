@@ -26,8 +26,8 @@ Keyword related to author's research areas
    file1
    file2
    file3
-   file3a
    file4 
+   file3a
  
 Indices and tables
 ==================

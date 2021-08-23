@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Details of EStA &mdash; EStA 2.6.0 documentation</title>
+  <title>EStA subfolders &mdash; EStA 2.6.0 documentation</title>
   
 
   
@@ -95,15 +95,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Details of EStA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#procsessing">procsessing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#file-formats-supported">file formats supported</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EStA subfolders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file3.html">ML algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
 </ul>
 
             
@@ -152,7 +146,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Details of EStA</li>
+      <li>EStA subfolders</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -171,18 +165,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="details-of-esta">
-<h1>Details of EStA<a class="headerlink" href="#details-of-esta" title="Permalink to this headline">¶</a></h1>
-<section id="procsessing">
-<h2>procsessing<a class="headerlink" href="#procsessing" title="Permalink to this headline">¶</a></h2>
-<section id="file-formats-supported">
-<h3>file formats supported<a class="headerlink" href="#file-formats-supported" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is a paragraph split across
-two lines.
+  <section id="esta-subfolders">
+<h1>EStA subfolders<a class="headerlink" href="#esta-subfolders" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>EStA contains various software preprocessing and postprocessing routines to make
+tasks easily and automated to some extents.
+
+The main class is <span class="nv">`aadhaar`</span> class to handle atomic structure information i.e. atomic positions, atomic
+symbols, cell parameters. It can handle both molecules and periodic systems. Molecules are handled
+using xyz file format and periodic systems are handled using POSCAR file format. These formats can
+be further suited to other file format,
+
+Various Bags are present in the EStA folder to handle software specific data such as <span class="nv">`vaspBag`</span>, <span class="nv">`qeBag`</span>,
+<span class="nv">`siestaBag`</span>, <span class="nv">`grrmBag`</span>, <span class="nv">`xtbBag`</span>, and so on.
+
+Thermodynamics can be calculated based on the vibrational calculation implemented in the <span class="nv">`qeBag`</span>. Similarly
+transition state analysis is possible using routines in the <span class="nv">`transitionState`</span>.
+
+There are lots of routines some written in fortran to be interfaced with <span class="nv">`EStA`</span> package. Machine learning
+algorithms are also implemented such as GPR based on gaussian processes in the <span class="nv">`mlBag`</span>.
 </pre></div>
 </div>
-</section>
-</section>
 </section>
 
 
