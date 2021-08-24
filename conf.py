@@ -78,6 +78,7 @@ extensions = [
 html_theme = "sphinx_rtd_theme"
 
 
+html_logo = 'esta_logo2.6.0_cropped.png'
 
 
 

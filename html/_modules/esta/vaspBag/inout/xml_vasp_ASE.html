@@ -92,17 +92,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../file1.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">EStA subfolders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../file3.html">ML algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Git Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html">List of EStA packages information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-general-package">esta.general package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Cheat Sheet</a></li>
 </ul>
 
             
@@ -190,7 +182,7 @@
 <span class="kn">import</span> <span class="nn">os</span>
 
 
-<div class="viewcode-block" id="get_atomtypes"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes">[docs]</a><span class="k">def</span> <span class="nf">get_atomtypes</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+<div class="viewcode-block" id="get_atomtypes"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes">[docs]</a><span class="k">def</span> <span class="nf">get_atomtypes</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Given a file name, get the atomic symbols.</span>
 
 <span class="sd">    The function can get this information from OUTCAR and POTCAR</span>
@@ -213,7 +205,7 @@
     <span class="k">return</span> <span class="n">atomtypes</span></div>
 
 
-<div class="viewcode-block" id="atomtypes_outpot"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.atomtypes_outpot">[docs]</a><span class="k">def</span> <span class="nf">atomtypes_outpot</span><span class="p">(</span><span class="n">posfname</span><span class="p">,</span> <span class="n">numsyms</span><span class="p">):</span>
+<div class="viewcode-block" id="atomtypes_outpot"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.atomtypes_outpot">[docs]</a><span class="k">def</span> <span class="nf">atomtypes_outpot</span><span class="p">(</span><span class="n">posfname</span><span class="p">,</span> <span class="n">numsyms</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Try to retreive chemical symbols from OUTCAR or POTCAR</span>
 <span class="sd">    </span>
 <span class="sd">    If getting atomtypes from the first line in POSCAR/CONTCAR fails, it might</span>
@@ -262,7 +254,7 @@
                   <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tried</span><span class="p">))</span></div>
 
 
-<div class="viewcode-block" id="get_atomtypes_from_formula"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes_from_formula">[docs]</a><span class="k">def</span> <span class="nf">get_atomtypes_from_formula</span><span class="p">(</span><span class="n">formula</span><span class="p">):</span>
+<div class="viewcode-block" id="get_atomtypes_from_formula"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes_from_formula">[docs]</a><span class="k">def</span> <span class="nf">get_atomtypes_from_formula</span><span class="p">(</span><span class="n">formula</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return atom types from chemical formula (optionally prepended</span>
 <span class="sd">    with and underscore).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -275,7 +267,7 @@
     <span class="k">return</span> <span class="n">atomtypes</span></div>
 
 
-<div class="viewcode-block" id="read_vasp"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp">[docs]</a><span class="k">def</span> <span class="nf">read_vasp</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;CONTCAR&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="read_vasp"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp">[docs]</a><span class="k">def</span> <span class="nf">read_vasp</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;CONTCAR&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Import POSCAR/CONTCAR type file.</span>
 
 <span class="sd">    Reads unitcell, atom positions and constraints from the POSCAR/CONTCAR</span>
@@ -407,7 +399,7 @@
     <span class="k">return</span> <span class="n">atoms</span></div>
 
 
-<div class="viewcode-block" id="read_vasp_out"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_out">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_out</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;OUTCAR&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="read_vasp_out"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_out">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_out</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;OUTCAR&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Import OUTCAR type file.</span>
 
 <span class="sd">    Reads unitcell, atom positions, energies, and forces from the OUTCAR file</span>
@@ -520,7 +512,7 @@
         <span class="k">return</span> <span class="p">[</span><span class="n">images</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="p">)]</span></div>
 
 
-<div class="viewcode-block" id="read_vasp_xdatcar"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xdatcar">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_xdatcar</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="read_vasp_xdatcar"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xdatcar">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_xdatcar</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Import XDATCAR file</span>
 
 <span class="sd">       Reads all positions from the XDATCAR and returns a list of</span>
@@ -579,7 +571,7 @@
         <span class="k">return</span> <span class="n">images</span><span class="p">[</span><span class="n">index</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="read_vasp_xml"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xml">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_xml</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;vasprun.xml&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+<div class="viewcode-block" id="read_vasp_xml"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xml">[docs]</a><span class="k">def</span> <span class="nf">read_vasp_xml</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;vasprun.xml&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Parse vasprun.xml file.</span>
 
 <span class="sd">    Reads unit cell, atom positions, energies, forces, and constraints</span>
@@ -704,7 +696,7 @@
     <span class="k">return</span> <span class="n">cell</span><span class="p">,</span> <span class="n">scpos</span><span class="p">,</span> <span class="n">forces</span></div>
 <span class="c1">#</span>
 
-<div class="viewcode-block" id="write_vasp"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.xml_vasp_ASE.write_vasp">[docs]</a><span class="k">def</span> <span class="nf">write_vasp</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">direct</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="write_vasp"><a class="viewcode-back" href="../../../../esta.vaspBag.inout.html#esta.vaspBag.inout.xml_vasp_ASE.write_vasp">[docs]</a><span class="k">def</span> <span class="nf">write_vasp</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">atoms</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">direct</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                <span class="n">symbol_count</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">long_format</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vasp5</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Method to write VASP position (POSCAR/CONTCAR) files.</span>
 

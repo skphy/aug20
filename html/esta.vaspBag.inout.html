@@ -59,6 +59,9 @@
           
 
           
+            
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
           </a>
 
           
@@ -102,6 +105,8 @@
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
 </ul>
 
@@ -174,9 +179,6 @@
 <h1>esta.vaspBag.inout package<a class="headerlink" href="#esta-vaspbag-inout-package" title="Permalink to this headline">¶</a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="esta-vaspbag-inout-bending-nanoribbon-module">
-<h2>esta.vaspBag.inout.bending_nanoribbon module<a class="headerlink" href="#esta-vaspbag-inout-bending-nanoribbon-module" title="Permalink to this headline">¶</a></h2>
 </section>
 <section id="module-esta.vaspBag.inout.crystal_lattice">
 <span id="esta-vaspbag-inout-crystal-lattice-module"></span><h2>esta.vaspBag.inout.crystal_lattice module<a class="headerlink" href="#module-esta.vaspBag.inout.crystal_lattice" title="Permalink to this headline">¶</a></h2>
@@ -349,118 +351,6 @@ output: reciprocal space lattice vectors: b1, b2, b3</p>
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal">
 <em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">to_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal" title="Permalink to this definition">¶</a></dt>
 <dd><p>get atomic position in crystal cooridnates</p>
-</dd></dl>
-
-</dd></dl>
-
-</section>
-<section id="module-esta.vaspBag.inout.crystal_lattice0">
-<span id="esta-vaspbag-inout-crystal-lattice0-module"></span><h2>esta.vaspBag.inout.crystal_lattice0 module<a class="headerlink" href="#module-esta.vaspBag.inout.crystal_lattice0" title="Permalink to this headline">¶</a></h2>
-<p>Crystal lattice class to define lattice parameters and basis
-crystal = lattice + basis (atoms or molecules )</p>
-<p>Author: Sonu Kumar
-Email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
-Date: April, 2017, 2019, 2020</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.crystal_lattice0.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Crystal lattice class to define lattice parameters and basis
-crystal = lattice + basis (atoms or molecules )</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_all_atoms_labels">
-<span class="sig-name descname"><span class="pre">get_all_atoms_labels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_all_atoms_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_all_atoms_labels" title="Permalink to this definition">¶</a></dt>
-<dd><p>by reading POSCAR, find the atomic labels of the atoms and total no of atoms</p>
-<p>input: POSCAR file in current dir.</p>
-<dl>
-<dt>output:</dt><dd><ul class="simple">
-<li><p>list of strings of atomic lebels of all atoms according to the numbering of atoms in</p></li>
-</ul>
-<p>POSCAR file
-- scalar; total number of atoms in the POSCAR file
-- list of integer numbers starting from 1 to ntotal for all atoms(e.g. 1 1 1 2 3 4 4 ..)</p>
-</dd>
-</dl>
-<p>author: sk
-email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_dispPOSCAR">
-<span class="sig-name descname"><span class="pre">get_dispPOSCAR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ldisp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disp_atoms_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_dispPOSCAR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_dispPOSCAR" title="Permalink to this definition">¶</a></dt>
-<dd><p>get displaced poscar with selective tag and atomic positions
-tagged as T T T or F F F</p>
-<dl>
-<dt>input:</dt><dd><p>logical: ldisp, True/False (displace all atoms or dont displace any of the atoms)</p>
-<dl class="simple">
-<dt>list: disp_atoms_num;  atm numbers which are to be displaced;</dt><dd><p>numbering starts from 1 .. to natoms ….TODO YET</p>
-</dd>
-</dl>
-</dd>
-<dt>output:</dt><dd><p>POSCAR file with selective dynamics tags</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_grouped_list">
-<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_grouped_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_grouped_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get same string elements of list grouped together</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_neach_type">
-<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_neach_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_neach_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>get number of list entries of each type</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_poscar">
-<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_poscar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_poscar" title="Permalink to this definition">¶</a></dt>
-<dd><p>get poscar file variables:</p>
-<dl class="simple">
-<dt>input:</dt><dd><p>POSCAR file</p>
-</dd>
-<dt>output:</dt><dd><dl class="simple">
-<dt>if l_SelectDynamics:</dt><dd><p>return self.tau_cartesian, self.real_volume, self.LV1,
-self.LV2, self.LV3,self.atm_type, self.natom_type, self.natoms,
-self.atomFix, self.atomMove</p>
-</dd>
-<dt>else:</dt><dd><p>return self.tau_cartesian, self.real_volume, self.LV1,
-self.LV2, self.LV3,self.atm_type, self.natom_type, self.natoms</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_unique_list">
-<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.get_unique_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_unique_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>get unique elements of list</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>string for each type of atoms</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice0.CrystalLattice.reciprocal_lattice">
-<span class="sig-name descname"><span class="pre">reciprocal_lattice</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/vaspBag/inout/crystal_lattice0.html#CrystalLattice.reciprocal_lattice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.reciprocal_lattice" title="Permalink to this definition">¶</a></dt>
-<dd><p>method to calculate the reciprocal lattice vectors</p>
-<p>input: real space lattice vectors: LV1, LV2, LV3
-output: reciprocal space lattice vectors: b1, b2, b3</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>note: a factor of 2pi is included in b1, b2, and b3</p></li>
-</ul>
-</div></blockquote>
 </dd></dl>
 
 </dd></dl>

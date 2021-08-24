@@ -38,3 +38,15 @@
 
 .. include:: esta.transitionState.rst
 
+.. note:: **surfReact package**:
+    Surface reaction tool for finding various atomic structures created using different operations ... more 
+    documentation will be added later.
+
+.. include:: esta.surfReact.rst
+
+.. note:: **mlBag package**:
+   ML related algorithms are implemented such gaussian kernals, etc. Atomic and other descriptors creation is also 
+   possible provided DFT or low level calculation results are available.  Also, various other algorithms are 
+   called from the well known package sklearn package. 
+
+.. include:: esta.mlBag.rst

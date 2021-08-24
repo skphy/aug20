@@ -26,10 +26,30 @@ Subpackages
    esta.qeBag
    esta.siestaBag
    esta.spaceGroup
+   esta.surfReact
    esta.transitionState
    esta.turbomoleBag
    esta.vaspBag
    esta.xtbBag
+
+Submodules
+----------
+
+esta.bond\_length module
+------------------------
+
+.. automodule:: esta.bond_length
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.element module
+-------------------
+
+.. automodule:: esta.element
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

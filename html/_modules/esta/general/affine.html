@@ -92,17 +92,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
 </ul>
 
             
@@ -187,7 +179,7 @@
 <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="affine_map"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.affine_map">[docs]</a><span class="k">def</span> <span class="nf">affine_map</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<div class="viewcode-block" id="affine_map"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.affine_map">[docs]</a><span class="k">def</span> <span class="nf">affine_map</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Extends 3x3 transform matrices to 4x4, i.e. general affine transforms.</span>
 
@@ -218,7 +210,7 @@
         <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="transform"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.transform">[docs]</a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
+<div class="viewcode-block" id="transform"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.transform">[docs]</a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Applies a matrix transform on an array.</span>
 
@@ -256,7 +248,7 @@
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">array</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="translation_matrix"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.translation_matrix">[docs]</a><span class="k">def</span> <span class="nf">translation_matrix</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
+<div class="viewcode-block" id="translation_matrix"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.translation_matrix">[docs]</a><span class="k">def</span> <span class="nf">translation_matrix</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Return matrix to translate by direction vector.</span>
 
@@ -274,7 +266,7 @@
     <span class="k">return</span> <span class="n">matrix</span></div>
 
 
-<div class="viewcode-block" id="change_of_basis"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.change_of_basis">[docs]</a><span class="k">def</span> <span class="nf">change_of_basis</span><span class="p">(</span><span class="n">basis1</span><span class="p">,</span> <span class="n">basis2</span><span class="o">=</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span><span class="p">)):</span>
+<div class="viewcode-block" id="change_of_basis"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.change_of_basis">[docs]</a><span class="k">def</span> <span class="nf">change_of_basis</span><span class="p">(</span><span class="n">basis1</span><span class="p">,</span> <span class="n">basis2</span><span class="o">=</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span><span class="p">)):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns the matrix that goes from one basis to the other.</span>
 
@@ -302,7 +294,7 @@
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">standard_to_basis2</span><span class="p">,</span> <span class="n">basis1_to_standard</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="is_basis"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.is_basis">[docs]</a><span class="k">def</span> <span class="nf">is_basis</span><span class="p">(</span><span class="n">basis</span><span class="p">):</span>
+<div class="viewcode-block" id="is_basis"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.is_basis">[docs]</a><span class="k">def</span> <span class="nf">is_basis</span><span class="p">(</span><span class="n">basis</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns true if the set of vectors forms a basis. This is done by checking</span>
 <span class="sd">    whether basis vectors are independent via an eigenvalue calculation.</span>
@@ -319,7 +311,7 @@
     <span class="k">return</span> <span class="mi">0</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">basis</span><span class="p">))</span></div>
 
 
-<div class="viewcode-block" id="is_rotation_matrix"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.is_rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">is_rotation_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+<div class="viewcode-block" id="is_rotation_matrix"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.is_rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">is_rotation_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Checks whether a matrix is orthogonal with unit determinant (1 or -1), properties</span>
 <span class="sd">    of rotation matrices.</span>
@@ -345,7 +337,7 @@
     <span class="k">return</span> <span class="n">is_orthogonal</span> <span class="ow">and</span> <span class="n">unit_determinant</span></div>
 
 
-<div class="viewcode-block" id="rotation_matrix"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">rotation_matrix</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)):</span>
+<div class="viewcode-block" id="rotation_matrix"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">rotation_matrix</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Return matrix to rotate about axis defined by direction around the origin [0,0,0].</span>
 <span class="sd">    To combine rotation and translations, see http://www.euclideanspace.com/maths/geometry/affine/matrix4x4/index.htm</span>
@@ -387,7 +379,7 @@
     <span class="k">return</span> <span class="n">R</span></div>
 
 
-<div class="viewcode-block" id="translation_rotation_matrix"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.translation_rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">translation_rotation_matrix</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">translation</span><span class="p">):</span>
+<div class="viewcode-block" id="translation_rotation_matrix"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.translation_rotation_matrix">[docs]</a><span class="k">def</span> <span class="nf">translation_rotation_matrix</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">translation</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns a 4x4 matrix that includes a rotation and a translation.</span>
 
@@ -410,7 +402,7 @@
     <span class="k">return</span> <span class="n">rmat</span></div>
 
 
-<div class="viewcode-block" id="change_basis_mesh"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.change_basis_mesh">[docs]</a><span class="k">def</span> <span class="nf">change_basis_mesh</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">basis1</span><span class="p">,</span> <span class="n">basis2</span><span class="p">):</span>
+<div class="viewcode-block" id="change_basis_mesh"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.change_basis_mesh">[docs]</a><span class="k">def</span> <span class="nf">change_basis_mesh</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">basis1</span><span class="p">,</span> <span class="n">basis2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Changes the basis of meshgrid arrays.</span>
 
@@ -444,7 +436,7 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="minimum_image_distance"><a class="viewcode-back" href="../../../file4.html#esta.general.affine.minimum_image_distance">[docs]</a><span class="k">def</span> <span class="nf">minimum_image_distance</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">lattice</span><span class="p">):</span>
+<div class="viewcode-block" id="minimum_image_distance"><a class="viewcode-back" href="../../../esta.general.html#esta.general.affine.minimum_image_distance">[docs]</a><span class="k">def</span> <span class="nf">minimum_image_distance</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">zz</span><span class="p">,</span> <span class="n">lattice</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns a periodic array according to the minimum image convention.</span>
 

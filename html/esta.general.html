@@ -59,6 +59,9 @@
           
 
           
+            
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
           </a>
 
           
@@ -102,6 +105,8 @@
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
 </ul>
 
@@ -261,6 +266,153 @@ Note that the similar atoms (identical symbols) are grouped together.</p>
 
 </dd></dl>
 
+</section>
+<section id="module-esta.general.aadhaar0">
+<span id="esta-general-aadhaar0-module"></span><h2>esta.general.aadhaar0 module<a class="headerlink" href="#module-esta.general.aadhaar0" title="Permalink to this headline">¶</a></h2>
+<p>aadhaar class is a base class to read/write and process information
+related to atoms/molecules information such as atoms coord, atom labels,
+and types, and so on ..</p>
+<section id="it-reads">
+<h3>It reads<a class="headerlink" href="#it-reads" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>xyz file</p></li>
+<li><p>poscar file ….not yet completely done .. rather can be done using vaspBag crystal_latticee class</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="it-writes">
+<h3>It writes<a class="headerlink" href="#it-writes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>poscar file from cell parameters and xyz file data</p></li>
+<li><p>xyz file/s</p></li>
+<li><p>xyz file with frozen and notfrozen atoms</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="more-to-add-sk">
+<h3>more to add …….sk!!<a class="headerlink" href="#more-to-add-sk" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.aadhaar0.</span></span><span class="sig-name descname"><span class="pre">Aadhaar</span></span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>aadhaar class for structure related information</p>
+<p>** for more info for Class docstring, see the link:**
+.. _link https://numpydoc.readthedocs.io/en/latest/format.html
+…</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.exposure">
+<span class="sig-name descname"><span class="pre">exposure</span></span><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.exposure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exposure in seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.colorspace">
+<span class="sig-name descname"><span class="pre">colorspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rgb'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.colorspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represent the photo in the given colorspace.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.gamma">
+<span class="sig-name descname"><span class="pre">gamma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.gamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the photo’s gamma exposure.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.get_all_xyz_in_a_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id3"><span class="problematic" id="id4">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell_parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.get_poscar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.get_poscar" title="Permalink to this definition">¶</a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.get_xyz_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>name_outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.get_xyz_frozen">
+<span class="sig-name descname"><span class="pre">get_xyz_frozen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frozen_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_frozan_tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.get_xyz_frozen"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.get_xyz_frozen" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz data with frozan and not frozen atoms in the output file</p>
+<blockquote>
+<div><p>frozen_tuple: tuple containg fixed atomic_positins, atomic_symbols, and atom index
+not_frozen_tuple: tuple containg not fixed atomic_positins, atomic_symbols, and atom index
+name_outfile: optional, name of the output file</p>
+</div></blockquote>
+<dl class="simple">
+<dt>output:</dt><dd><p>create ‘xyz_FROZEN’ type file containing information of frozen and not frozen atoms etc</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.get_xyz_grouped">
+<span class="sig-name descname"><span class="pre">get_xyz_grouped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.get_xyz_grouped"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.get_xyz_grouped" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels: use method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>name_outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>name_outfile</cite></p>
+</dd>
+</dl>
+<p>NOTE: similar atoms are grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.general.aadhaar0.Aadhaar.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/aadhaar0.html#Aadhaar.read_xyz"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.aadhaar0.Aadhaar.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – name of xyz file, xyzfile</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>array</strong> (<em>array of rank 2 with shape (natoms, 3)</em>) – atomic positions</p></li>
+<li><p><strong>list</strong> (<em>list of strs</em>) – list of atomic labels, rank 1 array of atomic labels</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 </section>
 <section id="module-esta.general.add_const_to_dict">
 <span id="esta-general-add-const-to-dict-module"></span><h2>esta.general.add_const_to_dict module<a class="headerlink" href="#module-esta.general.add_const_to_dict" title="Permalink to this headline">¶</a></h2>
@@ -529,6 +681,77 @@ matrix in 3x3 or 4x4 shape.</p></li>
 <dt class="sig sig-object py" id="esta.general.b.get_qe_input">
 <span class="sig-prename descclassname"><span class="pre">esta.general.b.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/b.html#get_qe_input"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.b.get_qe_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.general.boltzmann">
+<span id="esta-general-boltzmann-module"></span><h2>esta.general.boltzmann module<a class="headerlink" href="#module-esta.general.boltzmann" title="Permalink to this headline">¶</a></h2>
+<p>Find Boltzman distribution of the states based on their energies</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.boltzmann.boltzmann_dist">
+<span class="sig-prename descclassname"><span class="pre">esta.general.boltzmann.</span></span><span class="sig-name descname"><span class="pre">boltzmann_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/boltzmann.html#boltzmann_dist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.boltzmann.boltzmann_dist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>energies</strong> (<em>array</em>) – energis in kjmol-1</p></li>
+<li><p><strong>temp</strong> (<em>scalar</em><em>, </em><em>optional</em>) – temperature in K
+Default values is room temp = 298 K</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>conc</strong> (<em>array</em>) – concentration or distribution of energy states</p></li>
+<li><p><em>.. note::</em> – units conversion from JK-1 to kcal mol-1 for the 1/k factor in exponetial:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>JK-1 –&gt; (1/1000)  KJ K-1 –&gt; (1/1000 * avogadro_number) kJ K-1 mol-1</dt><dd><p>cf.kb/1000 * 1/cf.calorie2joule * cf.N_A &lt;– kcal mol-1</p>
+</dd>
+</dl>
+</li>
+</ol>
+</li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.boltzmann.boltzmann_dist_">
+<span class="sig-prename descclassname"><span class="pre">esta.general.boltzmann.</span></span><span class="sig-name descname"><span class="pre">boltzmann_dist_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/boltzmann.html#boltzmann_dist_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.boltzmann.boltzmann_dist_" title="Permalink to this definition">¶</a></dt>
+<dd><p>energies in kcal mol-1
+temp in K; if none then room temp = 298 K</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.boltzmann.boltzmann_factor">
+<span class="sig-prename descclassname"><span class="pre">esta.general.boltzmann.</span></span><span class="sig-name descname"><span class="pre">boltzmann_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/esta/general/boltzmann.html#boltzmann_factor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#esta.general.boltzmann.boltzmann_factor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>energies</strong> (<em>array</em>) – energis in kjmol-1</p></li>
+<li><p><strong>temp</strong> (<em>scalar</em><em>, </em><em>optional</em>) – temperature in K
+Default values is room temp = 298 K</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>conc</strong> – boltzmann factor from the boltzmann distribution</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>units conversion from JK-1 to kcal mol-1 for the 1/k factor in exponetial:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>JK-1 –&gt; (1/1000)  KJ K-1 –&gt; (1/1000 * avogadro_number) kJ K-1 mol-1</dt><dd><p>cf.kb/1000 * 1/cf.calorie2joule * cf.N_A &lt;– kcal mol-1</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
 </dd></dl>
 
 </section>
@@ -1626,21 +1849,21 @@ the simplest approach often taken is to treat all 3N
 degrees of freedom of the adsorbate harmonically since the adsorbate often
 has no real translational or rotational degrees of freedom.</p>
 <dl class="simple">
-<dt>U(T) = <a href="#id3"><span class="problematic" id="id4">E_</span></a>   ext{elec} + <a href="#id5"><span class="problematic" id="id6">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
+<dt>U(T) = <a href="#id5"><span class="problematic" id="id6">E_</span></a>   ext{elec} + <a href="#id7"><span class="problematic" id="id8">E_</span></a>  ext{ZPE} +</dt><dd><p>sum_i^     ext{harm DOF}</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id7"><span class="problematic" id="id8">k_</span></a>       ext{B} T} - 1 }</p>
+<p>rac{epsilon_i}{e^{epsilon_i / <a href="#id9"><span class="problematic" id="id10">k_</span></a>       ext{B} T} - 1 }</p>
 <blockquote>
 <div><dl class="simple">
-<dt>S = <a href="#id9"><span class="problematic" id="id10">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
+<dt>S = <a href="#id11"><span class="problematic" id="id12">k_</span></a>      ext{B} sum_i^  ext{harm DOF}</dt><dd><p>left[</p>
 </dd>
 </dl>
 </div></blockquote>
-<p>rac{epsilon_i}{<a href="#id11"><span class="problematic" id="id12">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id13"><span class="problematic" id="id14">k_</span></a>   ext{B}T}-1
+<p>rac{epsilon_i}{<a href="#id13"><span class="problematic" id="id14">k_</span></a>      ext{B}Tleft(e^{epsilon_i/<a href="#id15"><span class="problematic" id="id16">k_</span></a>   ext{B}T}-1
 ight)} -</p>
 <blockquote>
-<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id15"><span class="problematic" id="id16">k_</span></a>    ext{B}T}</p>
+<div><p>ln left( 1 - e^{-epsilon_i/<a href="#id17"><span class="problematic" id="id18">k_</span></a>    ext{B}T}</p>
 </div></blockquote>
 <p>ight)
 ight]</p>
@@ -1746,9 +1969,6 @@ at const P)</p>
 <p>Atomic lattice thermodynamics</p>
 </dd></dl>
 
-</section>
-<section id="esta-general-thermo-for-ts1-eth-module">
-<h2>esta.general.thermo_for_TS1_eth module<a class="headerlink" href="#esta-general-thermo-for-ts1-eth-module" title="Permalink to this headline">¶</a></h2>
 </section>
 <section id="module-esta.general.xyz">
 <span id="esta-general-xyz-module"></span><h2>esta.general.xyz module<a class="headerlink" href="#module-esta.general.xyz" title="Permalink to this headline">¶</a></h2>

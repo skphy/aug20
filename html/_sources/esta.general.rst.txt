@@ -12,6 +12,14 @@ esta.general.aadhaar module
    :undoc-members:
    :show-inheritance:
 
+esta.general.aadhaar0 module
+----------------------------
+
+.. automodule:: esta.general.aadhaar0
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.general.add\_const\_to\_dict module
 ----------------------------------------
 
@@ -56,6 +64,14 @@ esta.general.b module
 ---------------------
 
 .. automodule:: esta.general.b
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.boltzmann module
+-----------------------------
+
+.. automodule:: esta.general.boltzmann
    :members:
    :undoc-members:
    :show-inheritance:
@@ -384,14 +400,6 @@ esta.general.thermo module
 --------------------------
 
 .. automodule:: esta.general.thermo
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.general.thermo\_for\_TS1\_eth module
------------------------------------------
-
-.. automodule:: esta.general.thermo_for_TS1_eth
    :members:
    :undoc-members:
    :show-inheritance:

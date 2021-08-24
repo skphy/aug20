@@ -4,26 +4,10 @@ esta.vaspBag.inout package
 Submodules
 ----------
 
-esta.vaspBag.inout.bending\_nanoribbon module
----------------------------------------------
-
-.. automodule:: esta.vaspBag.inout.bending_nanoribbon
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.vaspBag.inout.crystal\_lattice module
 ------------------------------------------
 
 .. automodule:: esta.vaspBag.inout.crystal_lattice
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.vaspBag.inout.crystal\_lattice0 module
--------------------------------------------
-
-.. automodule:: esta.vaspBag.inout.crystal_lattice0
    :members:
    :undoc-members:
    :show-inheritance:

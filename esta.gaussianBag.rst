@@ -20,14 +20,6 @@ esta.gaussianBag.input\_grrm module
    :undoc-members:
    :show-inheritance:
 
-esta.gaussianBag.output\_gaussian module
-----------------------------------------
-
-.. automodule:: esta.gaussianBag.output_gaussian
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.gaussianBag.output\_gaussian\_adv module
 ---------------------------------------------
 

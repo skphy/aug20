@@ -92,17 +92,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
 </ul>
 
             
@@ -191,7 +183,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1">#class CrystalLattice():</span>
-<div class="viewcode-block" id="CrystalLattice"><a class="viewcode-back" href="../../../file4.html#esta.general.crystal_latticee.CrystalLattice">[docs]</a><span class="k">class</span> <span class="nc">CrystalLattice</span><span class="p">:</span>
+<div class="viewcode-block" id="CrystalLattice"><a class="viewcode-back" href="../../../esta.general.html#esta.general.crystal_latticee.CrystalLattice">[docs]</a><span class="k">class</span> <span class="nc">CrystalLattice</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Crystal lattice class to define lattice parameters and basis</span>
 <span class="sd">    crystal = lattice + basis (atoms or molecules )</span>
@@ -226,7 +218,7 @@
         
         <span class="c1">#from reciprocal </span>
         
-<div class="viewcode-block" id="CrystalLattice.get_poscar"><a class="viewcode-back" href="../../../file4.html#esta.general.crystal_latticee.CrystalLattice.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_poscar"><a class="viewcode-back" href="../../../esta.general.html#esta.general.crystal_latticee.CrystalLattice.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get poscar file variables:</span>
 <span class="sd">        </span>
@@ -432,7 +424,7 @@
         <span class="k">else</span><span class="p">:</span> 
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span></div>
 
-<div class="viewcode-block" id="CrystalLattice.reciprocal_lattice"><a class="viewcode-back" href="../../../file4.html#esta.general.crystal_latticee.CrystalLattice.reciprocal_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">reciprocal_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.reciprocal_lattice"><a class="viewcode-back" href="../../../esta.general.html#esta.general.crystal_latticee.CrystalLattice.reciprocal_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">reciprocal_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        method to calculate the reciprocal lattice vectors        </span>
 
@@ -506,7 +498,7 @@
         <span class="c1">###print np.dot(np.linalg.inv(mat),np.array([b1, b2]))</span>
         <span class="c1">###</span>
    
-<div class="viewcode-block" id="CrystalLattice.get_all_atoms_labels"><a class="viewcode-back" href="../../../file4.html#esta.general.crystal_latticee.CrystalLattice.get_all_atoms_labels">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atoms_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="CrystalLattice.get_all_atoms_labels"><a class="viewcode-back" href="../../../esta.general.html#esta.general.crystal_latticee.CrystalLattice.get_all_atoms_labels">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atoms_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        by reading POSCAR, find the atomic labels of the atoms and total no of atoms</span>
 <span class="sd">        </span>

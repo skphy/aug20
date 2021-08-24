@@ -92,17 +92,9 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
 </ul>
 
             
@@ -229,7 +221,7 @@
 
 
 
-<div class="viewcode-block" id="ThermoDyn"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoDyn">[docs]</a><span class="k">class</span> <span class="nc">ThermoDyn</span><span class="p">:</span>
+<div class="viewcode-block" id="ThermoDyn"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoDyn">[docs]</a><span class="k">class</span> <span class="nc">ThermoDyn</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    thermodyn class to find energies (eV or other units) for </span>
 <span class="sd">    entropy, internal energy, and specific heat with respect to</span>
@@ -328,7 +320,7 @@
             <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">spin</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span>
             
-<div class="viewcode-block" id="ThermoDyn.get_zpe"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoDyn.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoDyn.get_zpe"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoDyn.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get quantum mechanical zpe energy in eV</span>
 <span class="sd">        &#39;&#39;&#39;</span>
@@ -348,7 +340,7 @@
             <span class="c1">#pass</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span></div>
     
-<div class="viewcode-block" id="ThermoDyn.get_S_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoDyn.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoDyn.get_S_vib"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoDyn.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get S_vib, vibrational entropy in eV/K</span>
 <span class="sd">        </span>
@@ -417,7 +409,7 @@
     
     
     
-<div class="viewcode-block" id="ThermoDyn.get_E_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoDyn.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoDyn.get_E_vib"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoDyn.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get vibration contribution to internal energy: </span>
 <span class="sd">        </span>
@@ -481,7 +473,7 @@
     
     
     
-<div class="viewcode-block" id="ThermoDyn.get_moment_inertia"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoDyn.get_moment_inertia">[docs]</a>    <span class="k">def</span> <span class="nf">get_moment_inertia</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoDyn.get_moment_inertia"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoDyn.get_moment_inertia">[docs]</a>    <span class="k">def</span> <span class="nf">get_moment_inertia</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get moment of inertia of the molecule or other possible system</span>
 <span class="sd">        </span>
@@ -711,7 +703,7 @@
 <span class="c1">#======================================================================================================</span>
 
 
-<div class="viewcode-block" id="ThermoIdealGas"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoIdealGas">[docs]</a><span class="k">class</span> <span class="nc">ThermoIdealGas</span><span class="p">(</span><span class="n">ThermoDyn</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoIdealGas"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoIdealGas">[docs]</a><span class="k">class</span> <span class="nc">ThermoIdealGas</span><span class="p">(</span><span class="n">ThermoDyn</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    calculate thermodynamic quantities within the ideal gas approximation</span>
 <span class="sd">    &#39;&#39;&#39;</span>
@@ -744,7 +736,7 @@
 <span class="c1">#         self.mass_list = thermo_obj.get_moment_inertia()</span>
         
         
-<div class="viewcode-block" id="ThermoIdealGas.get_enthalpy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoIdealGas.get_enthalpy">[docs]</a>    <span class="k">def</span> <span class="nf">get_enthalpy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoIdealGas.get_enthalpy"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoIdealGas.get_enthalpy">[docs]</a>    <span class="k">def</span> <span class="nf">get_enthalpy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there</span>
 <span class="sd">        </span>
@@ -840,7 +832,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">H</span>  <span class="c1"># eV</span></div>
         
         
-<div class="viewcode-block" id="ThermoIdealGas.get_entropy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoIdealGas.get_entropy">[docs]</a>    <span class="k">def</span> <span class="nf">get_entropy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoIdealGas.get_entropy"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoIdealGas.get_entropy">[docs]</a>    <span class="k">def</span> <span class="nf">get_entropy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        calculate entropy S(T,P) = S(T,P_0) − kB ln P/P_0</span>
 <span class="sd">        </span>
@@ -933,7 +925,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="n">S</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span>  <span class="c1"># ev/K</span></div>
         
-<div class="viewcode-block" id="ThermoIdealGas.get_Gibbs_free_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Gibbs_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoIdealGas.get_Gibbs_free_energy"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoIdealGas.get_Gibbs_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Gibbs_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        calculate the free energy G at a given temp and pressue</span>
 <span class="sd">        </span>
@@ -1015,7 +1007,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
 
-<div class="viewcode-block" id="ThermoHarmonic"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic">[docs]</a><span class="k">class</span> <span class="nc">ThermoHarmonic</span><span class="p">:</span>
+<div class="viewcode-block" id="ThermoHarmonic"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic">[docs]</a><span class="k">class</span> <span class="nc">ThermoHarmonic</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Harmonic thermodynamics</span>
 <span class="sd">    </span>
@@ -1084,7 +1076,7 @@
 <span class="c1">#             print(&#39;v not defined..&#39;)</span>
 <span class="c1">#             raise ValueError(&#39;v should be float&#39;)</span>
 
-<div class="viewcode-block" id="ThermoHarmonic.get_zpe"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoHarmonic.get_zpe"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns the zero-point vibrational energy eV.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -1093,7 +1085,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span></div>
         
     
-<div class="viewcode-block" id="ThermoHarmonic.get_E_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set_zero</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoHarmonic.get_E_vib"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set_zero</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        find the  in internal energy part due to vibrations from</span>
 <span class="sd">        0K to a given temperature in eV. All DOF are considered within the harmonic </span>
@@ -1146,7 +1138,7 @@
     
     
     
-<div class="viewcode-block" id="ThermoHarmonic.get_S_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoHarmonic.get_S_vib"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        get vibrational entropy in eV/K (3N DOF)</span>
 <span class="sd">        given in eV </span>
@@ -1187,7 +1179,7 @@
     
     
     
-<div class="viewcode-block" id="ThermoHarmonic.get_internal_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic.get_internal_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_internal_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#, set_internal_vib_energy_zero=None):</span>
+<div class="viewcode-block" id="ThermoHarmonic.get_internal_energy"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic.get_internal_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_internal_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#, set_internal_vib_energy_zero=None):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        find internal energy in eV at a given T in the harmonic approximation taking all DOF (3N)</span>
 <span class="sd">        at a given temperature (K).</span>
@@ -1226,7 +1218,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_internal</span></div>
     
     
-<div class="viewcode-block" id="ThermoHarmonic.get_Helmholtz_free_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Helmholtz_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="ThermoHarmonic.get_Helmholtz_free_energy"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHarmonic.get_Helmholtz_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Helmholtz_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        calculate the Helmholtz free energy </span>
 <span class="sd">        </span>
@@ -1259,13 +1251,13 @@
         <span class="k">return</span> <span class="n">F</span> <span class="c1"># eV</span></div></div>
 
     
-<div class="viewcode-block" id="ThermoHindredRotVib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoHindredRotVib">[docs]</a><span class="k">class</span> <span class="nc">ThermoHindredRotVib</span><span class="p">:</span>
+<div class="viewcode-block" id="ThermoHindredRotVib"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoHindredRotVib">[docs]</a><span class="k">class</span> <span class="nc">ThermoHindredRotVib</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Hinder vibrational and rotation oscillator thermodynamics</span>
 <span class="sd">    &#39;&#39;&#39;</span></div>
     
     
-<div class="viewcode-block" id="ThermoLattice"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo.ThermoLattice">[docs]</a><span class="k">class</span> <span class="nc">ThermoLattice</span><span class="p">:</span>
+<div class="viewcode-block" id="ThermoLattice"><a class="viewcode-back" href="../../../esta.general.html#esta.general.thermo.ThermoLattice">[docs]</a><span class="k">class</span> <span class="nc">ThermoLattice</span><span class="p">:</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Atomic lattice thermodynamics </span>
 <span class="sd">    &#39;&#39;&#39;</span></div>
